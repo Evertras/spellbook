@@ -1,0 +1,20 @@
+{
+  "name": "spellbook",
+  "version": "1.0.0",
+  "description": "A DnD 5e spellbook app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "repository": "NONE",
+  "devDependencies": {
+    "babel-preset-react": "^6.23.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.2"
+  },
+  "dependencies": {
+    "react": "^15.4.2"
+  }
+}
