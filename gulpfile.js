@@ -55,5 +55,5 @@ gulp.task('sass', () => {
 });
 
 gulp.task('default', ['clean'], () => {
-  return gulp.start(['browserify'])
+  return gulp.start(['browserify', 'sass'])
 });
