@@ -10,6 +10,18 @@ module.exports = React.createClass({
         <header>
           <h1>Hi there</h1>
         </header>
+        <ul>
+          <li>
+            <Link to="/">
+              Index
+            </Link>
+          </li>
+          <li>
+            <Link to="/about">
+              About
+            </Link>
+          </li>
+        </ul>
         <div>{this.props.children}</div>
         <footer>
           <p>Done!</p>

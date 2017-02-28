@@ -33,10 +33,10 @@ gulp.task('browserify', ['javascript', 'babel'], () => {
   return b.bundle()
              .pipe(source('compiled.js'))
              .pipe(buffer())
-             .pipe(gulp.dest('build/js/'))
-             .pipe(uglify())
+             .pipe(gulp.dest('src/static/js/'))
+             //.pipe(uglify())
              .pipe(rename({ suffix: '.min' }))
-             .pipe(gulp.dest('build/js/'))
+             .pipe(gulp.dest('src/static/js/'))
 });
 
 gulp.task('default', ['clean'], () => {
