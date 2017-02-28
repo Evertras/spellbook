@@ -27,7 +27,7 @@ app.get('*', (req, res) => {
       }
 
       if (redirectLocation) {
-        return res.redirect(302, redirectLocation.pathname + redirectLocation.search)
+        return res.redirect(302, redirectLocation.pathname + redirectLocation.search);
       }
 
       let markup;
@@ -40,11 +40,11 @@ app.get('*', (req, res) => {
 
       return res.render('index', { markup });
     }
-  )
+  );
 });
 
 const port = process.env.PORT || 8080;
-const env = process.env.NODE_ENV || 'production';
+//const env = process.env.NODE_ENV || 'production';
 
 server.listen(port, err => {
   if (err) {

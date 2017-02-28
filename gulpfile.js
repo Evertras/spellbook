@@ -8,35 +8,40 @@ const rename = require('gulp-rename');
 const browserify = require('browserify');
 const buffer = require('vinyl-buffer');
 const source = require('vinyl-source-stream');
+const eslint = require('gulp-eslint');
+const pump = require('pump');
 
 gulp.task('clean', () => {
   return gulp.src(['build/*'], {read: false}).pipe(clean());
 });
 
-gulp.task('babel', () => {
+gulp.task('lint', () => {
+  return gulp.src(['src/**/*.jsx', 'src/**/*.js', '!src/static/js/compiled*'])
+             .pipe(eslint())
+             .pipe(eslint.format())
+             .pipe(eslint.failAfterError());
+});
+
+gulp.task('babel', ['lint'], () => {
   return gulp.src('src/**/*.jsx')
-             .pipe(babel({ presets: [ 'react' ] }))
+             .pipe(babel({ presets: [ 'react', 'es2015' ] }))
              .pipe(gulp.dest('build/js/'));
 });
 
-gulp.task('javascript', () => {
-  return gulp.src('src/*.js')
-             .pipe(gulp.dest('build/js/'));
-});
-
-gulp.task('browserify', ['javascript', 'babel'], () => {
+gulp.task('browserify', ['babel'], (cb) => {
   const b = browserify({
     entries: 'build/js/client.js',
     transform: [ 'envify' ]
   });
 
-  return b.bundle()
-             .pipe(source('compiled.js'))
-             .pipe(buffer())
-             .pipe(gulp.dest('src/static/js/'))
-             //.pipe(uglify())
-             .pipe(rename({ suffix: '.min' }))
-             .pipe(gulp.dest('src/static/js/'))
+  pump([b.bundle(),
+         source('compiled.js'),
+         buffer(),
+         gulp.dest('src/static/js/'),
+         uglify(),
+         rename({ suffix: '.min' }),
+         gulp.dest('src/static/js/')],
+       cb);
 });
 
 gulp.task('default', ['clean'], () => {

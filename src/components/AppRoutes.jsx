@@ -8,6 +8,7 @@ const Router = reactRouter.Router;
 const browserHistory = reactRouter.browserHistory;
 
 module.exports = React.createClass({
+  displayName: 'AppRoutes',
   render: function() {
     return (
       <Router history={browserHistory} routes={routes} onUpdate={() => window.scrollTo(0,0)} />
