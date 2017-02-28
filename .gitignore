@@ -1,3 +1,3 @@
 build
 node_modules
-src/static/js/compiled*
+src/static/**/compiled*

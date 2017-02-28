@@ -9,7 +9,9 @@ const browserify = require('browserify');
 const buffer = require('vinyl-buffer');
 const source = require('vinyl-source-stream');
 const eslint = require('gulp-eslint');
+const sass = require('gulp-sass');
 const pump = require('pump');
+const concat = require('gulp-concat');
 
 gulp.task('clean', () => {
   return gulp.src(['build/*'], {read: false}).pipe(clean());
@@ -42,6 +44,14 @@ gulp.task('browserify', ['babel'], (cb) => {
          rename({ suffix: '.min' }),
          gulp.dest('src/static/js/')],
        cb);
+});
+
+gulp.task('sass', () => {
+  return gulp.src('./src/styles/**/*.scss')
+             .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+             .pipe(gulp.dest('build/css/'))
+             .pipe(concat('compiled.css'))
+             .pipe(gulp.dest('src/static/css/'))
 });
 
 gulp.task('default', ['clean'], () => {
