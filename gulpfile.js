@@ -14,13 +14,13 @@ gulp.task('clean', () => {
 });
 
 gulp.task('babel', () => {
-  return gulp.src('src/components/**/*.jsx')
+  return gulp.src('src/**/*.jsx')
              .pipe(babel({ presets: [ 'react' ] }))
              .pipe(gulp.dest('build/js/'));
 });
 
 gulp.task('javascript', () => {
-  return gulp.src('src/js/**/*.js')
+  return gulp.src('src/*.js')
              .pipe(gulp.dest('build/js/'));
 });
 
