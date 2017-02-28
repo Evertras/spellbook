@@ -35,7 +35,7 @@ app.get('*', (req, res) => {
       if (renderProps) {
         markup = ReactDOMServer.renderToString(<RouterContext {...renderProps} />);
       } else {
-        return res.send(404);
+        return res.sendStatus(404);
       }
 
       return res.render('index', { markup });
