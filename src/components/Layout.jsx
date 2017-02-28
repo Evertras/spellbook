@@ -6,7 +6,10 @@ const Link = require('react-router').Link;
 module.exports = React.createClass({
   displayName: 'Layout',
   propTypes: {
-    children: React.PropTypes.arrayOf(React.PropTypes.node)
+    children: React.PropTypes.oneOfType([
+      React.PropTypes.arrayOf(React.PropTypes.node),
+      React.PropTypes.node
+    ])
   },
   getDefaultProps: function() {
     return {
