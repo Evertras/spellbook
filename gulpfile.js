@@ -57,3 +57,8 @@ gulp.task('sass', () => {
 gulp.task('default', ['clean'], () => {
   return gulp.start(['browserify', 'sass'])
 });
+
+gulp.task('watch', () => {
+  gulp.watch('src/styles/**/*.scss', ['sass']);
+  gulp.watch('src/**/*.jsx', ['browserify']);
+});
