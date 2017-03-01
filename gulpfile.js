@@ -26,7 +26,7 @@ gulp.task('lint', () => {
 });
 
 gulp.task('babel', ['lint'], () => {
-  return gulp.src('src/**/*.jsx')
+  return gulp.src(['src/**/*.js*', '!src/static/js/compiled*'])
              .pipe(babel({ presets: [ 'react', 'es2015' ] }))
              .pipe(gulp.dest('build/js/'));
 });
@@ -71,5 +71,5 @@ gulp.task('default', ['clean'], () => {
 
 gulp.task('watch', () => {
   gulp.watch('src/styles/**/*.scss', ['sass']);
-  gulp.watch('src/**/*.jsx', ['browserify']);
+  gulp.watch(['src/**/*.js*', '!src/static/js/compiled*'], ['browserify']);
 });
