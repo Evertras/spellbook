@@ -12,13 +12,14 @@ const eslint = require('gulp-eslint');
 const sass = require('gulp-sass');
 const pump = require('pump');
 const concat = require('gulp-concat');
+const mocha = require('gulp-mocha');
 
 gulp.task('clean', () => {
   return gulp.src(['build/*'], {read: false}).pipe(clean());
 });
 
 gulp.task('lint', () => {
-  return gulp.src(['src/**/*.jsx', 'src/**/*.js', '!src/static/js/compiled*'])
+  return gulp.src(['src/**/*.jsx', 'src/**/*.js', '!src/static/js/compiled*', '!src/**/tests/*'])
              .pipe(eslint())
              .pipe(eslint.format())
              .pipe(eslint.failAfterError());
@@ -52,6 +53,16 @@ gulp.task('sass', () => {
              .pipe(gulp.dest('build/css/'))
              .pipe(concat('compiled.css'))
              .pipe(gulp.dest('src/static/css/'))
+});
+
+gulp.task('test', ['babel'], () => {
+  babel({
+    presets: ['react']
+  })
+  return gulp.src('./build/**/tests/*.js', { read: false })
+             .pipe(mocha({
+               require: ['jsdom-global/register']
+             }));
 });
 
 gulp.task('default', ['clean'], () => {

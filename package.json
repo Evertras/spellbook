@@ -4,7 +4,7 @@
   "description": "A DnD 5e spellbook app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/gulp test",
     "start": "nodemon src/server.jsx --exec babel-node --presets react"
   },
   "author": "",
@@ -15,7 +15,9 @@
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
     "browserify": "^14.1.0",
+    "chai": "^3.5.0",
     "envify": "^4.0.0",
+    "enzyme": "^2.7.1",
     "eslint": "^3.16.1",
     "eslint-plugin-react": "^6.10.0",
     "gulp": "^3.9.1",
@@ -23,21 +25,28 @@
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.1",
     "gulp-eslint": "^3.0.1",
+    "gulp-mocha": "^4.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-rimraf": "^0.2.1",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.0.1",
     "gutil": "^1.6.4",
+    "jsdom": "^9.11.0",
+    "jsdom-global": "^2.1.1",
+    "mocha": "^3.2.0",
     "nodemon": "^1.11.0",
     "pump": "^1.0.2",
+    "react-addons-test-utils": "^15.4.2",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
     "ejs": "^2.5.6",
     "express": "^4.14.1",
+    "flux": "^3.1.2",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-router": "^3.0.2"
+    "react-router": "^3.0.2",
+    "react-tools": "^0.13.3"
   }
 }
