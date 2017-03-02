@@ -2,11 +2,16 @@
 
 const path = require('path');
 const React = require('react');
+const Redux = require('redux');
+const Provider = require('react-redux').Provider;
 const ReactDOMServer = require('react-dom/server');
 const ReactRouter = require('react-router');
 const http = require('http');
 const Express = require('express');
 const routes = require('./routes');
+const reducers = require('./reducers');
+const spellActions = require('./actions/spells');
+const allSpells = require('./data/allSpells');
 
 const RouterContext = ReactRouter.RouterContext;
 
@@ -31,14 +36,25 @@ app.get('*', (req, res) => {
       }
 
       let markup;
+      let preloadedState;
 
       if (renderProps) {
-        markup = ReactDOMServer.renderToString(<RouterContext {...renderProps} />);
+        const store = Redux.createStore(reducers);
+        const unsub = store.subscribe(() => {
+          markup = ReactDOMServer.renderToString(
+            <Provider store={store}>
+              <RouterContext {...renderProps} />
+            </Provider>
+          );
+          preloadedState = JSON.stringify(store.getState()).replace(/</g, '\\u003c');
+        });
+        store.dispatch(spellActions.spellsLoaded(allSpells));
+        unsub();
       } else {
         return res.sendStatus(404);
       }
 
-      return res.render('index', { markup });
+      return res.render('index', { markup, preloadedState });
     }
   );
 });

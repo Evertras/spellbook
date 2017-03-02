@@ -11,7 +11,7 @@ const spells = [
   },
   {
     Name: 'Sample Spell 2',
-    Classes: ['Sorceror', 'Warlock', 'Wizard']
+    Classes: ['Sorcerer', 'Warlock', 'Wizard']
   }
 ];
 
@@ -25,7 +25,7 @@ describe('Spell Reducer', () => {
 
     expect(nextState.byClass.Warlock).to.deep.equal(spells.map(s => s.Name));
     expect(nextState.byClass.Bard).to.deep.equal(['Sample Spell 1']);
-    expect(nextState.byClass.Sorceror).to.deep.equal(['Sample Spell 2']);
+    expect(nextState.byClass.Sorcerer).to.deep.equal(['Sample Spell 2']);
     expect(nextState.byClass.Wizard).to.deep.equal(['Sample Spell 2']);
   });
 

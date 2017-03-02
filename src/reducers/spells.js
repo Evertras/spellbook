@@ -11,7 +11,7 @@ const initialState = {
     Druid: [],
     Paladin: [],
     Ranger: [],
-    Sorceror: [],
+    Sorcerer: [],
     Warlock: [],
     Wizard: []
   }
