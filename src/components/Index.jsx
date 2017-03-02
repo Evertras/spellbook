@@ -1,7 +1,7 @@
 'use strict';
 
 const React = require('react');
-const SpellList = require('./SpellList');
+const ClassSpellList = require('../containers/ClassSpellList');
 const allSpells = require('../data/allSpells');
 
 const sampleSpell = {
@@ -22,8 +22,8 @@ You grow claws, fangs, spines, horns, or a different natural weapon of your choi
 Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it.`,
   'AtHigherLevels': '',
   'SourceBook': 'Players Handbook',
-  'SourcePage':211,
-  'Classes':['Sorcerer','Wizard']
+  'SourcePage': 211,
+  'Classes': ['Sorcerer','Wizard']
 };
 
 module.exports = React.createClass({
@@ -32,7 +32,7 @@ module.exports = React.createClass({
     sampleSpell.x = 3;
     return (
       <div>
-        <SpellList spells={allSpells} />
+        <ClassSpellList selectedClass="Wizard" />
       </div>
     );
   }
