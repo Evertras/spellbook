@@ -19,7 +19,7 @@ gulp.task('clean', () => {
 });
 
 gulp.task('lint', () => {
-  return gulp.src(['src/**/*.jsx', 'src/**/*.js', '!src/static/js/compiled*', '!src/**/tests/*'])
+  return gulp.src(['src/**/*.jsx', 'src/**/*.js', '!src/static/js/compiled*', '!src/**/tests/*', '!src/data/*'])
              .pipe(eslint())
              .pipe(eslint.format())
              .pipe(eslint.failAfterError());

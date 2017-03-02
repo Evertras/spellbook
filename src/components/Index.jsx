@@ -1,7 +1,8 @@
 'use strict';
 
 const React = require('react');
-const SpellDetails = require('./SpellDetails');
+const SpellList = require('./SpellList');
+const allSpells = require('../data/allSpells');
 
 const sampleSpell = {
   'Name': 'Alter Self',
@@ -28,9 +29,10 @@ Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appr
 module.exports = React.createClass({
   displayName: 'Index',
   render: function() {
+    sampleSpell.x = 3;
     return (
       <div>
-        <SpellDetails spellData={sampleSpell} />
+        <SpellList spells={allSpells} />
       </div>
     );
   }

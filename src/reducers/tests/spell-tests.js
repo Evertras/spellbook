@@ -35,14 +35,11 @@ describe('Spell Reducer', () => {
 
     const nextState = spellReducer(undefined, classLoadedAction);
 
-    console.log(wizardSpells);
-    console.log(nextState);
-
     expect(Object.keys(nextState.all).length).to.equal(wizardSpells.length);
 
     expect(nextState.byClass.Wizard).to.deep.equal(wizardSpells.map(s => s.Name));
     for (const className of Object.keys(nextState.byClass).filter(s => s !== 'Wizard')) {
       expect(nextState.byClass[className].length).to.equal(0);
     }
-  })
+  });
 });
