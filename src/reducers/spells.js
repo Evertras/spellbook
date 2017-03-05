@@ -6,14 +6,14 @@ const _ = require('lodash');
 const initialState = {
   all: {},
   byClass: {
-    Bard: [],
-    Cleric: [],
-    Druid: [],
-    Paladin: [],
-    Ranger: [],
-    Sorcerer: [],
-    Warlock: [],
-    Wizard: []
+    bard: [],
+    cleric: [],
+    druid: [],
+    paladin: [],
+    ranger: [],
+    sorcerer: [],
+    warlock: [],
+    wizard: []
   }
 };
 
@@ -29,7 +29,7 @@ function spells(state = initialState, action) {
     for(const s of action.spells) {
       newState.all[s.Name] = s;
 
-      for (const c of s.Classes) {
+      for (const c of s.Classes.map(c => c.toLowerCase())) {
         newState.byClass[c].push(s.Name);
       }
     }
@@ -44,7 +44,7 @@ function spells(state = initialState, action) {
       newState.all[s.Name] = s;
     }
 
-    newState.byClass[action.className] = action.spells.map(s => s.Name);
+    newState.byClass[action.className.toLowerCase()] = action.spells.map(s => s.Name);
 
     return newState;
   }

@@ -23,10 +23,10 @@ describe('Spell Reducer', () => {
 
     expect(Object.keys(nextState.all).length).to.equal(spells.length);
 
-    expect(nextState.byClass.Warlock).to.deep.equal(spells.map(s => s.Name));
-    expect(nextState.byClass.Bard).to.deep.equal(['Sample Spell 1']);
-    expect(nextState.byClass.Sorcerer).to.deep.equal(['Sample Spell 2']);
-    expect(nextState.byClass.Wizard).to.deep.equal(['Sample Spell 2']);
+    expect(nextState.byClass.warlock).to.deep.equal(spells.map(s => s.Name));
+    expect(nextState.byClass.bard).to.deep.equal(['Sample Spell 1']);
+    expect(nextState.byClass.sorcerer).to.deep.equal(['Sample Spell 2']);
+    expect(nextState.byClass.wizard).to.deep.equal(['Sample Spell 2']);
   });
 
   it('puts class-loaded spells into .all as well as the class without filling in unloaded classes', () => {
@@ -37,8 +37,8 @@ describe('Spell Reducer', () => {
 
     expect(Object.keys(nextState.all).length).to.equal(wizardSpells.length);
 
-    expect(nextState.byClass.Wizard).to.deep.equal(wizardSpells.map(s => s.Name));
-    for (const className of Object.keys(nextState.byClass).filter(s => s !== 'Wizard')) {
+    expect(nextState.byClass.wizard).to.deep.equal(wizardSpells.map(s => s.Name));
+    for (const className of Object.keys(nextState.byClass).filter(s => s !== 'wizard')) {
       expect(nextState.byClass[className].length).to.equal(0);
     }
   });
