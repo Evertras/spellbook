@@ -40,7 +40,11 @@ module.exports = React.createClass({
   },
   render: function() {
     const byLevel = _.groupBy(this.props.spells, 'Level');
-    const sections = Object.keys(byLevel).map(level => <SpellListSection level={level} spells={byLevel[level]} key={level} />);
+    const sections = Object.keys(byLevel)
+                           .map(level => <SpellListSection level={level}
+                                                           spells={byLevel[level]}
+                                                           key={level} />);
+
     return (
       <div>
         {sections}
