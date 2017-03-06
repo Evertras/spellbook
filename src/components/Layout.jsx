@@ -35,7 +35,7 @@ module.exports = React.createClass({
             </Link>
           </li>
           <li>
-            <ClassLink selectedClass="wizard">Bard</ClassLink>
+            <ClassLink selectedClass="bard">Bard</ClassLink>
           </li>
           <li>
             <ClassLink selectedClass="cleric">Cleric</ClassLink>

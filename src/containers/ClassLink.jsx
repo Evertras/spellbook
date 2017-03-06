@@ -14,7 +14,7 @@ const ClassLink = React.createClass({
   },
   render: function() {
     return (
-      <Link to={'/spells/' + this.props.selectedClass} activeStyle={{color: 'black'}}>
+      <Link to={'/spells/' + this.props.selectedClass} activeClassName="active">
         {this.props.children}
       </Link>
     );
