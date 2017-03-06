@@ -1,6 +1,7 @@
 'use strict';
 
 const React = require('react');
+const ClassLink = require('../containers/ClassLink');
 
 module.exports = React.createClass({
   displayName: 'Index',
@@ -8,7 +9,9 @@ module.exports = React.createClass({
     return (
       <div>
         <h1>Index</h1>
-        <p>Some index things</p>
+        <ul>
+          <li><ClassLink selectedClass="wizard">Wizard</ClassLink></li>
+        </ul>
       </div>
     );
   }

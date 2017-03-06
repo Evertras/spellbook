@@ -2,6 +2,7 @@
 
 const React = require('react');
 const Link = require('react-router').Link;
+const ClassLink = require('../containers/ClassLink');
 
 module.exports = React.createClass({
   displayName: 'Layout',
@@ -32,6 +33,30 @@ module.exports = React.createClass({
             <Link to="/about">
               About
             </Link>
+          </li>
+          <li>
+            <ClassLink selectedClass="wizard">Bard</ClassLink>
+          </li>
+          <li>
+            <ClassLink selectedClass="cleric">Cleric</ClassLink>
+          </li>
+          <li>
+            <ClassLink selectedClass="druid">Druid</ClassLink>
+          </li>
+          <li>
+            <ClassLink selectedClass="paladin">Paladin</ClassLink>
+          </li>
+          <li>
+            <ClassLink selectedClass="ranger">Ranger</ClassLink>
+          </li>
+          <li>
+            <ClassLink selectedClass="sorcerer">Sorcerer</ClassLink>
+          </li>
+          <li>
+            <ClassLink selectedClass="warlock">Warlock</ClassLink>
+          </li>
+          <li>
+            <ClassLink selectedClass="wizard">Wizard</ClassLink>
           </li>
         </ul>
         <div>{this.props.children}</div>
