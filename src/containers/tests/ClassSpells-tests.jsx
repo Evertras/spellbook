@@ -35,6 +35,7 @@ describe('<ClassSpells />', () => {
       const listedSpells = innerLists.find('li');
 
       expect(listedSpells.length).to.equal(allSpells.filter(s => s.Classes.map(c => c.toLowerCase()).indexOf('wizard') !== -1).length)
+      expect(listedSpells.length).to.be.greaterThan(0);
 
       done();
     });
