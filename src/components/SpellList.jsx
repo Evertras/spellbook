@@ -20,8 +20,8 @@ const SpellListSection = React.createClass({
                              <SchoolIcon school={s.School} /> {s.Name}
                            </li>);
       return (
-        <div key={this.props.level}>
-          <h1>{this.props.level === '0' ? 'Cantrips (0 Level)' : 'Level ' + this.props.level}</h1>
+        <div key={this.props.level} className="spell-list-section">
+          <h2>{this.props.level === '0' ? 'Cantrips (0 Level)' : 'Level ' + this.props.level}</h2>
           <ul className="spell-list">
             {listItems}
           </ul>
@@ -35,7 +35,8 @@ module.exports = React.createClass({
   displayName: 'SpellList',
   propTypes: function() {
     return {
-      spells: React.PropTypes.array.isRequired
+      spells: React.PropTypes.array.isRequired,
+      header: React.PropTypes.string
     };
   },
   render: function() {
@@ -46,7 +47,8 @@ module.exports = React.createClass({
                                                            key={level} />);
 
     return (
-      <div>
+      <div className="spell-list">
+        <h1>{this.props.header}</h1>
         {sections}
       </div>
     );
