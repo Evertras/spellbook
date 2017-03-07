@@ -1,5 +1,8 @@
+@import _sizes
+
 nav
   padding: 0
+  height: $topbar-height
 
   li > a
     position: relative
@@ -21,15 +24,14 @@ nav
       text-align: center
       float: left
       width: 150px
-      height: 65px
-      line-height: 65px
+      height: $topbar-height
+      line-height: $topbar-height
       position: relative
       cursor: pointer
       text-transform: uppercase
 
       &:hover
         background: #522
-        border-radius: 5px
 
 ul.drop-menu
   position: absolute

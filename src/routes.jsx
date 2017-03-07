@@ -14,6 +14,6 @@ module.exports = (
   <Route path="/" component={Layout}>
     <IndexRoute component={Index} />
     <Route path="about" component={About} />
-    <Route path="/spells/(:selectedClass)" component={SpellSelection} />
+    <Route path="/spells/:selectedClass(/:spellName)" component={SpellSelection} />
   </Route>
 );

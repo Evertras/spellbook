@@ -3,13 +3,16 @@
 const React = require('react');
 const _ = require('lodash');
 const SchoolIcon = require('./SchoolIcon');
+const Link = require('react-router').Link;
+const urljoin = require('url-join');
 
 const SpellListSection = React.createClass({
   displayName: 'SpellListSection',
   propTypes: function() {
     return {
       level: React.PropTypes.number.isRequired,
-      spells: React.PropTypes.array.isRequired
+      spells: React.PropTypes.array.isRequired,
+      linkBase: React.PropTypes.string.isRequired
     };
   },
   render: function() {
@@ -17,7 +20,11 @@ const SpellListSection = React.createClass({
       const listItems = _.sortBy(this.props.spells, 'Name')
                          .map(s =>
                            <li key={s.Name}>
-                             <SchoolIcon school={s.School} /> {s.Name}
+                             <SchoolIcon school={s.School} />
+                             <Link to={urljoin(this.props.linkBase, s.Name)}
+                                   activeClassName="active">
+                               {s.Name}
+                              </Link>
                            </li>);
       return (
         <div key={this.props.level} className="spell-list-section">
@@ -36,21 +43,25 @@ module.exports = React.createClass({
   propTypes: function() {
     return {
       spells: React.PropTypes.array.isRequired,
-      header: React.PropTypes.string
+      header: React.PropTypes.string,
+      linkBase: React.PropTypes.string.isRequired
     };
   },
   render: function() {
     const byLevel = _.groupBy(this.props.spells, 'Level');
     const sections = Object.keys(byLevel)
                            .map(level => <SpellListSection level={level}
+                                                           linkBase={this.props.linkBase}
                                                            spells={byLevel[level]}
                                                            key={level} />);
 
     return (
-      <div className="spell-list">
+      <div className="spell-list scrollbar">
         <h1>{this.props.header}</h1>
-        {sections}
-      </div>
+        <div className="spell-list-sections">
+          {sections}
+        </div>
+    </div>
     );
   }
 });
