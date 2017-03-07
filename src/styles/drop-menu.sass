@@ -1,0 +1,76 @@
+nav
+  padding: 0
+
+  li > a
+    position: relative
+    display: inline-block
+    color: inherit
+    text-decoration: none
+    width: 100%
+    height: 100%
+
+  > ul
+    list-style: none
+    padding: 0
+    margin: 0
+    display: inline-block
+    background: #311
+    border-radius: 5px
+
+    > li
+      text-align: center
+      float: left
+      width: 150px
+      height: 65px
+      line-height: 65px
+      position: relative
+      cursor: pointer
+      text-transform: uppercase
+
+      &:hover
+        background: #522
+        border-radius: 5px
+
+ul.drop-menu
+  position: absolute
+  top: 100%
+  left: 0%
+  width: 100%
+  padding: 0
+  list-style: none
+
+  li
+    background: #200
+
+    &:hover
+      background-color: #311
+
+ul.drop-menu li
+  display: none
+
+li:hover > ul.drop-menu li
+  display: block
+
+li:hover > ul.drop-menu.drop-menu-anim
+  perspective: 1000px
+
+  li
+    opacity: 0
+    transform-origin: top left
+
+    @for $i from 1 through 8
+      &:nth-child(#{$i})
+        animation:
+          name: menu-anim
+          duration: 100ms
+          delay: ($i - 1)*40ms
+          timing-function: ease-in-out
+          fill-mode: forwards
+
+@keyframes menu-anim
+  0%
+    opacity: 0
+    transform: rotateZ(30deg) translateY(20px)
+  100%
+    opacity: 1
+    transform: rotateZ(0deg) translateY(0px)

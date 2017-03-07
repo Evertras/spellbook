@@ -48,7 +48,7 @@ gulp.task('browserify', ['babel'], (cb) => {
 });
 
 gulp.task('sass', () => {
-  return gulp.src('./src/styles/**/*.scss')
+  return gulp.src('./src/styles/**/*')
              .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
              .pipe(gulp.dest('build/css/'))
              .pipe(concat('compiled.css'))
@@ -70,6 +70,6 @@ gulp.task('default', ['clean'], () => {
 });
 
 gulp.task('watch', () => {
-  gulp.watch('src/styles/**/*.scss', ['sass']);
+  gulp.watch('src/styles/**/*', ['sass']);
   gulp.watch(['src/**/*.js*', '!src/static/js/compiled*'], ['browserify']);
 });
