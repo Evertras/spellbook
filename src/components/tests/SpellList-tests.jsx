@@ -10,11 +10,13 @@ const render = enzyme.render;
 const spells = [
   {
     Name: 'Sample Spell 1',
-    Level: 1
+    Level: 1,
+    School: 'Transmutation'
   },
   {
     Name: 'Sample Spell 2',
-    Level: 3
+    Level: 3,
+    School: 'Evocation'
   }
 ];
 

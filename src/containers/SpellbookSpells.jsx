@@ -5,7 +5,7 @@ const SpellList = require('../components/SpellList');
 
 const mapStateToProps = (state) => {
   return {
-    spells: state.spells.spellbook.map(s => state.spells.all[s]),
+    spells: Object.keys(state.spells.spellbook).map(k => state.spells.all[k]),
     header: 'Spellbook'
   };
 };

@@ -15,7 +15,7 @@ const initialState = {
     warlock: [],
     wizard: []
   },
-  spellbook: ['Light']
+  spellbook: {}
 };
 
 function spells(state = initialState, action) {
@@ -46,6 +46,22 @@ function spells(state = initialState, action) {
     }
 
     newState.byClass[action.className.toLowerCase()] = action.spells.map(s => s.Name);
+
+    return newState;
+  }
+
+  case spellActions.SPELLBOOK_ADD: {
+    const newState = _.cloneDeep(state);
+
+    newState.spellbook[action.spell.Name] = action.spell;
+
+    return newState;
+  }
+
+  case spellActions.SPELLBOOK_REMOVE: {
+    const newState = _.cloneDeep(state);
+
+    delete newState.spellbook[action.spell.Name];
 
     return newState;
   }

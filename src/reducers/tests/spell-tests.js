@@ -7,11 +7,13 @@ const spellActions = require('../../actions/spells');
 const spells = [
   {
     Name: 'Sample Spell 1',
-    Classes: ['Bard', 'Warlock']
+    Classes: ['Bard', 'Warlock'],
+    School: 'Transmutation'
   },
   {
     Name: 'Sample Spell 2',
-    Classes: ['Sorcerer', 'Warlock', 'Wizard']
+    Classes: ['Sorcerer', 'Warlock', 'Wizard'],
+    School: 'Evocation'
   }
 ];
 
@@ -42,4 +44,29 @@ describe('Spell Reducer', () => {
       expect(nextState.byClass[className].length).to.equal(0);
     }
   });
+
+  it('adds a spell to the spellbook correctly', () => {
+    const someSpell = spells[0];
+    const addSpellAction = spellActions.spellbookAdd(someSpell);
+
+    const nextState = spellReducer(undefined, addSpellAction);
+
+    expect(Object.keys(nextState.spellbook).length).to.equal(1);
+
+    expect(nextState.spellbook[someSpell.Name]).to.deep.equal(someSpell);
+  });
+
+  it('removes a spell from the spellbook correctly', () => {
+    const someSpell = spells[0];
+    const loadedAction = spellActions.spellsLoaded(spells);
+    const addSpellAction = spellActions.spellbookAdd(someSpell);
+    const removeSpellAction = spellActions.spellbookRemove(someSpell);
+
+    const initialState = spellReducer(undefined, loadedAction);
+    const addedState = spellReducer(initialState, addSpellAction);
+    const nextState = spellReducer(addedState, removeSpellAction);
+
+    expect(Object.keys(nextState.spellbook).length).to.equal(0);
+    expect(nextState.all[someSpell.Name]).to.deep.equal(someSpell);
+  })
 });

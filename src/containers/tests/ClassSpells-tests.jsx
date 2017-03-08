@@ -19,11 +19,10 @@ describe('<ClassSpells />', () => {
 
   it('renders all Wizard spells', done => {
     const selectedClass = 'Wizard';
-    const params = { selectedClass };
     const unsub = store.subscribe(() => {
       const wrapper = enzyme.mount(
         <Provider store={store}>
-          <ClassSpells params={params} />
+          <ClassSpells selectedClass={selectedClass} />
         </Provider>
       );
 
