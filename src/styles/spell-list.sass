@@ -1,4 +1,5 @@
 @import _sizes
+@import _colors
 
 div.spell-list
   padding-left: 10px
@@ -15,13 +16,13 @@ div.spell-list-sections
     list-style-type: none
 
     > li a
-      color: white
+      color: inherit
       text-decoration: none
       padding-left: 5px
 
       &.active
-        color: red
-        font-weight: bold
+        color: $color-warm
+        //font-weight: bold
 
   > div.spell-list-section
     padding-left: 20px
