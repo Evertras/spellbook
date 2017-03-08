@@ -1,5 +1,6 @@
 @import _colors
 @import _fonts
+@import _sizes
 
 body
   background-color: $bg-color
@@ -23,8 +24,24 @@ div.col-parent
   display: flex
 
 div.col-half
-  display: inline-block
   width: 50%
+
+div.col-quarter
+  width: 25%
+
+div.col-spell-list
+  width: $list-width
+
+div.col-middle
+  width: unquote("calc(100% - #{$list-width * 2})")
+
+div.row-parent
+  display: flex
+  flex-direction: column
+  height: 100%
+
+div.row-half
+  height: 50%
 
 .scrollbar
   &::-webkit-scrollbar

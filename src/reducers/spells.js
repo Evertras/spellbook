@@ -14,7 +14,8 @@ const initialState = {
     sorcerer: [],
     warlock: [],
     wizard: []
-  }
+  },
+  spellbook: ['Light']
 };
 
 function spells(state = initialState, action) {

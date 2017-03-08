@@ -28,7 +28,7 @@ const SpellListSection = React.createClass({
                            </li>);
       return (
         <div key={this.props.level} className="spell-list-section">
-          <h2>{this.props.level === '0' ? 'Cantrips (0 Level)' : 'Level ' + this.props.level}</h2>
+          <h2>{this.props.level === '0' ? 'Cantrips' : 'Level ' + this.props.level}</h2>
           <ul className="spell-list">
             {listItems}
           </ul>

@@ -11,8 +11,6 @@ const mapStateToProps = (state, ownProps) => {
   };
 };
 
-const ClassSpells = connect(
-  mapStateToProps
-)(SpellList);
+const ClassSpells = connect(mapStateToProps)(SpellList);
 
 module.exports = ClassSpells;
