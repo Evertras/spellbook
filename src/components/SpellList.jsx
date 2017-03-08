@@ -3,6 +3,7 @@
 const React = require('react');
 const _ = require('lodash');
 const SchoolIcon = require('./SchoolIcon');
+const SpellbookToggle = require('./SpellbookToggle');
 const Link = require('react-router').Link;
 const urljoin = require('url-join');
 
@@ -17,9 +18,11 @@ const SpellListSection = React.createClass({
   },
   render: function() {
     if (this.props.spells && this.props.spells.length > 0) {
+      const nop = () => {};
       const listItems = _.sortBy(this.props.spells, 'Name')
                          .map(s =>
                            <li key={s.Name}>
+                             <SpellbookToggle isIncluded={false} cbAdd={nop} cbRemove={nop} />
                              <SchoolIcon school={s.School} />
                              <Link to={urljoin(this.props.linkBase, s.Name)}
                                    activeClassName="active">

@@ -37,6 +37,7 @@
     "nodemon": "^1.11.0",
     "pump": "^1.0.2",
     "react-addons-test-utils": "^15.4.2",
+    "sinon": "^1.17.7",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
