@@ -56,9 +56,9 @@ module.exports = React.createClass({
                                                            key={level} />);
 
     return (
-      <div className="spell-list scrollbar">
+      <div className="spell-list">
         <h1>{this.props.header}</h1>
-        <div className="spell-list-sections">
+        <div className="spell-list-sections scrollbar">
           {sections}
         </div>
     </div>

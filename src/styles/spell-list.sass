@@ -2,15 +2,18 @@
 @import _colors
 
 div.spell-list
+  display: flex
+  flex-direction: column
   padding-left: $gutter-size
+  height: unquote("calc(100vh - #{$topbar-height})")
 
   h1
     text-transform: capitalize
 
-  height: unquote("calc(100vh - #{$topbar-height})")
-  overflow-y: scroll
-
 div.spell-list-sections
+  overflow-y: scroll
+  height: 100%
+
   ul
     padding: 0px $gutter-size/2
     list-style-type: none
