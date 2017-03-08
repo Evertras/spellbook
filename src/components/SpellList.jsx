@@ -3,9 +3,30 @@
 const React = require('react');
 const _ = require('lodash');
 const SchoolIcon = require('./SchoolIcon');
-const SpellbookToggle = require('./SpellbookToggle');
+const SpellbookToggle = require('../containers/SpellbookToggle');
 const Link = require('react-router').Link;
 const urljoin = require('url-join');
+
+const SpellListEntry = React.createClass({
+  displayName: 'SpellListEntry',
+  propTypes: function() {
+    return {
+      spell: React.PropTypes.object.isRequired
+    };
+  },
+  render: function() {
+    return (
+      <li>
+        <SpellbookToggle spell={this.props.spell} />
+        <SchoolIcon school={this.props.spell.School} />
+        <Link to={urljoin(this.props.linkBase, this.props.spell.Name)}
+              activeClassName="active">
+          {this.props.spell.Name}
+        </Link>
+      </li>
+    );
+  }
+});
 
 const SpellListSection = React.createClass({
   displayName: 'SpellListSection',
@@ -18,17 +39,12 @@ const SpellListSection = React.createClass({
   },
   render: function() {
     if (this.props.spells && this.props.spells.length > 0) {
-      const nop = () => {};
       const listItems = _.sortBy(this.props.spells, 'Name')
-                         .map(s =>
-                           <li key={s.Name}>
-                             <SpellbookToggle isIncluded={false} cbAdd={nop} cbRemove={nop} />
-                             <SchoolIcon school={s.School} />
-                             <Link to={urljoin(this.props.linkBase, s.Name)}
-                                   activeClassName="active">
-                               {s.Name}
-                              </Link>
-                           </li>);
+                         .map(s => (
+                           <SpellListEntry key={s.Name}
+                                           spell={s}
+                                           linkBase={this.props.linkBase} />
+                         ));
       return (
         <div key={this.props.level} className="spell-list-section">
           <h2>{this.props.level === '0' ? 'Cantrips' : 'Level ' + this.props.level}</h2>

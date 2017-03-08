@@ -4,9 +4,9 @@ const React = require('react');
 const expect = require('chai').expect;
 const enzyme = require('enzyme');
 const sinon = require('sinon');
-const SpellbookToggle = require('../SpellbookToggle');
+const SpellbookToggle = require('../Toggle');
 
-describe('<SpellbookToggle />', () => {
+describe('<Toggle />', () => {
   it('calls the cbAdd callback when toggling on', () => {
     const cbAdd = sinon.stub();
     const cbRemove = sinon.stub();
