@@ -6,6 +6,8 @@ const _ = require('lodash');
 function cleanString(str) {
   return str.replace(/<br\/>/g, '\n')
             .replace(/\&#39;/g, '\'')
+            .replace(/<div>/g, '\n')
+            .replace(/<.*>/g, '')
             .trim();
 }
 
