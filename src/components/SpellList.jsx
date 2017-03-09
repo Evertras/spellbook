@@ -15,11 +15,12 @@ const SpellListEntry = React.createClass({
     };
   },
   render: function() {
+    const target = urljoin(this.props.linkBase, encodeURIComponent(this.props.spell.Name));
     return (
       <li>
         <SpellbookToggle spell={this.props.spell} />
         <SchoolIcon school={this.props.spell.School} />
-        <Link to={urljoin(this.props.linkBase, this.props.spell.Name)}
+        <Link to={target}
               activeClassName="active">
           {this.props.spell.Name}
         </Link>
