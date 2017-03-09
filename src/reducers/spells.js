@@ -52,7 +52,6 @@ function spells(state = initialState, action) {
 
   case spellActions.SPELLBOOK_ADD: {
     const newState = _.cloneDeep(state);
-    console.log(action);
 
     newState.spellbook[action.spell.Name] = action.spell;
 

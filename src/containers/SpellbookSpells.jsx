@@ -4,9 +4,9 @@ const connect = require('react-redux').connect;
 const SpellList = require('../components/SpellList');
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {
-    spells: Object.keys(state.spells.spellbook).map(k => state.spells.all[k]),
+    spells: Object.keys(state.spells.spellbook)
+                  .map(k => state.spells.all[k]),
     header: 'Spellbook'
   };
 };

@@ -13,16 +13,25 @@ module.exports = React.createClass({
     let atHigherLevels = '';
 
     if(s.AtHigherLevels) {
-      atHigherLevels = (<p>At Higher Levels: {s.AtHigherLevels}</p>);
+      atHigherLevels = (<p><strong>At Higher Levels:</strong> {s.AtHigherLevels}</p>);
     }
+
+    const desc = s.Description.split('\n').filter(d => !!d)
+                              .map((d, i) => (
+                                <div key={i} className="spell-details-desc-chunk">
+                                  {d}
+                                </div>
+                              ));
 
     return (
       <div className="spell-details">
         <h1>{s.Name}</h1>
         <h2>{s.Level} {s.School} ({classes})</h2>
-        <p>{s.CastTime} - {s.Components}</p>
-        <p>{s.Duration}</p>
-        <p>{s.Description}</p>
+        <p><strong>Range:</strong> {s.Range}</p>
+        <p><strong>Cast Time:</strong> {s.CastTime}</p>
+        <p><strong>Components:</strong> {s.Components}</p>
+        <p><strong>Duration:</strong> {s.Duration}</p>
+        {desc}
         {atHigherLevels}
         <p>{s.SourceBook} - Page {s.SourcePage}</p>
       </div>
