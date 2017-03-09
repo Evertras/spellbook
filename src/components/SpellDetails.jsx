@@ -33,7 +33,7 @@ module.exports = React.createClass({
         <p><strong>Duration:</strong> {s.Duration}</p>
         {desc}
         {atHigherLevels}
-        <p>{s.SourceBook} - Page {s.SourcePage}</p>
+        <p className="spell-details-source">{s.SourceBook} - Page {s.SourcePage}</p>
       </div>
     );
   }
