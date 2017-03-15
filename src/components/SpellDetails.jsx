@@ -25,7 +25,7 @@ module.exports = React.createClass({
 
     return (
       <div className="spell-details">
-        <h1>{s.Name}</h1>
+        <h1>{s.Name}{s.Ritual ? ' (Ritual)' : ''}</h1>
         <h2>{s.Level} {s.School} ({classes})</h2>
         <p><strong>Range:</strong> {s.Range}</p>
         <p><strong>Cast Time:</strong> {s.CastTime}</p>

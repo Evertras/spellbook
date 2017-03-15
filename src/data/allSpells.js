@@ -98,7 +98,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Alarm (Ritual)",
+    "Name": "Alarm",
     "School": "Abjuration",
     "Level": 1,
     "CastTime": "1 Minute",
@@ -156,7 +156,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Animal Messenger (Ritual)",
+    "Name": "Animal Messenger",
     "School": "Enchantment",
     "Level": 2,
     "CastTime": "1 Action",
@@ -401,7 +401,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Augury (Ritual)",
+    "Name": "Augury",
     "School": "Divination",
     "Level": 2,
     "CastTime": "1 Minute",
@@ -607,7 +607,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Beast Sense (Ritual)",
+    "Name": "Beast Sense",
     "School": "Divination",
     "Level": 2,
     "CastTime": "1 Action",
@@ -1186,7 +1186,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Commune (Ritual)",
+    "Name": "Commune",
     "School": "Divination",
     "Level": 5,
     "CastTime": "1 Minute",
@@ -1204,7 +1204,7 @@ module.exports = [
     "Ritual": true
   },
   {
-    "Name": "Commune with Nature (Ritual)",
+    "Name": "Commune with Nature",
     "School": "Divination",
     "Level": 5,
     "CastTime": "1 Minute",
@@ -1241,7 +1241,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Comprehend Languages (Ritual)",
+    "Name": "Comprehend Languages",
     "School": "Divination",
     "Level": 1,
     "CastTime": "1 Action",
@@ -1469,7 +1469,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Contact Other Plane (Ritual)",
+    "Name": "Contact Other Plane",
     "School": "Divination",
     "Level": 5,
     "CastTime": "1 Minute",
@@ -1998,7 +1998,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Detect Magic (Ritual)",
+    "Name": "Detect Magic",
     "School": "Divination",
     "Level": 1,
     "CastTime": "1 Action",
@@ -2184,7 +2184,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Divination (Ritual)",
+    "Name": "Divination",
     "School": "Divination",
     "Level": 4,
     "CastTime": "1 Action",
@@ -2298,7 +2298,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Drawmij’s Instant Summons (Ritual)",
+    "Name": "Drawmij’s Instant Summons",
     "School": "Conjuration",
     "Level": 6,
     "CastTime": "1 Minute",
@@ -2806,7 +2806,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Feign Death (Ritual)",
+    "Name": "Feign Death",
     "School": "Necromancy",
     "Level": 3,
     "CastTime": "1 Action",
@@ -2827,7 +2827,7 @@ module.exports = [
     "Ritual": true
   },
   {
-    "Name": "Find Familiar (Ritual)",
+    "Name": "Find Familiar",
     "School": "Conjuration",
     "Level": 1,
     "CastTime": "1 Hour",
@@ -3135,7 +3135,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Forbiddance (Ritual)",
+    "Name": "Forbiddance",
     "School": "Abjuration",
     "Level": 6,
     "CastTime": "10 Minutes",
@@ -3319,7 +3319,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Gentle Repose (Ritual)",
+    "Name": "Gentle Repose",
     "School": "Necromancy",
     "Level": 2,
     "CastTime": "1 Action",
@@ -4025,7 +4025,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Identify (Ritual)",
+    "Name": "Identify",
     "School": "Divination",
     "Level": 1,
     "CastTime": "1 Minute",
@@ -4044,7 +4044,7 @@ module.exports = [
     "Ritual": true
   },
   {
-    "Name": "Illusory Script (Ritual)",
+    "Name": "Illusory Script",
     "School": "Illusion",
     "Level": 1,
     "CastTime": "1 Minute",
@@ -4343,7 +4343,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Leomund’s Tiny Hut (Ritual)",
+    "Name": "Leomund’s Tiny Hut",
     "School": "Evocation",
     "Level": 3,
     "CastTime": "1 Minute",
@@ -4481,7 +4481,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Locate Animals or Plants (Ritual)",
+    "Name": "Locate Animals or Plants",
     "School": "Divination",
     "Level": 2,
     "CastTime": "1 Action",
@@ -4684,7 +4684,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Magic Mouth (Ritual)",
+    "Name": "Magic Mouth",
     "School": "Illusion",
     "Level": 2,
     "CastTime": "1 Minute",
@@ -4876,7 +4876,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Meld into Stone (Ritual)",
+    "Name": "Meld into Stone",
     "School": "Transmutation",
     "Level": 3,
     "CastTime": "1 Action",
@@ -5431,7 +5431,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Phantom Steed (Ritual)",
+    "Name": "Phantom Steed",
     "School": "Illusion",
     "Level": 3,
     "CastTime": "1 Minute",
@@ -5846,7 +5846,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Purify Food and Drink (Ritual)",
+    "Name": "Purify Food and Drink",
     "School": "Transmutation",
     "Level": 1,
     "CastTime": "1 Action",
@@ -5906,7 +5906,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Rary’s Telepathic Bond (Ritual)",
+    "Name": "Rary’s Telepathic Bond",
     "School": "Divination",
     "Level": 5,
     "CastTime": "1 Action",
@@ -6443,7 +6443,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Silence (Ritual)",
+    "Name": "Silence",
     "School": "Illusion",
     "Level": 2,
     "CastTime": "1 Action",
@@ -6501,7 +6501,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Skywrite (Ritual)",
+    "Name": "Skywrite",
     "School": "Transmutation",
     "Level": 2,
     "CastTime": "1 Action",
@@ -6617,7 +6617,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Speak with Animals (Ritual)",
+    "Name": "Speak with Animals",
     "School": "Divination",
     "Level": 1,
     "CastTime": "1 Action",
@@ -7082,7 +7082,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Tenser’s Floating Disk (Ritual)",
+    "Name": "Tenser’s Floating Disk",
     "School": "Conjuration",
     "Level": 1,
     "CastTime": "1 Action",
@@ -7413,7 +7413,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Unseen Servant (Ritual)",
+    "Name": "Unseen Servant",
     "School": "Conjuration",
     "Level": 1,
     "CastTime": "1 Action",
@@ -7659,7 +7659,7 @@ module.exports = [
     "Ritual": false
   },
   {
-    "Name": "Water Breathing (Ritual)",
+    "Name": "Water Breathing",
     "School": "Transmutation",
     "Level": 3,
     "CastTime": "1 Action",
@@ -7680,7 +7680,7 @@ module.exports = [
     "Ritual": true
   },
   {
-    "Name": "Water Walk (Ritual)",
+    "Name": "Water Walk",
     "School": "Transmutation",
     "Level": 3,
     "CastTime": "1 Action",
