@@ -23,6 +23,8 @@ function cleanSpell(spell) {
     cleanedSpell.SourceBook = 'Player\'s Handbook';
   } else if (cleanedSpell.SourceBook === 'from EE Players Companion') {
     cleanedSpell.SourceBook = 'EE Player\'s Companion';
+  } else if (cleanedSpell.SourceBook === 'from Sword Coast Adventure\'s Guide') {
+    cleanedSpell.SourceBook = 'Sword Coast Adventurer\'s Guide';
   }
 
   const atHigherLevel = /at higher levels\W*(.*)/i.exec(cleanedSpell.Description);
@@ -40,7 +42,7 @@ function cleanSpell(spell) {
   }
 
   cleanedSpell.Concentration = cleanedSpell.Duration.indexOf('Concentration') !== -1;
-  cleanedSpell.Ritual = cleanedSpell.Name.indexOf('Ritual') !== -1;
+  cleanedSpell.Ritual = cleanedSpell.Ritual || cleanedSpell.Name.indexOf('Ritual') !== -1;
 
   cleanedSpell.Name = cleanedSpell.Name.replace(' (Ritual)', '');
 
