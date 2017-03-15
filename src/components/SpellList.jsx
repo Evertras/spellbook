@@ -20,6 +20,8 @@ const SpellListEntry = React.createClass({
       <li>
         <SpellbookToggle spell={this.props.spell} />
         <SchoolIcon school={this.props.spell.School} />
+        { this.props.spell.Concentration ? <i className="fa fa-user-circle spell-icon-concentration" title="Concentration"></i> : '' }
+        { this.props.spell.Ritual ? <i className="fa fa-book spell-icon-ritual" title="Ritual"></i> : '' }
         <Link to={target}
               activeClassName="active">
           {this.props.spell.Name}

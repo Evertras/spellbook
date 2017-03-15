@@ -11,12 +11,14 @@ module.exports = [
     "Duration": "Instantaneous",
     "Description": "You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. Constructs and undead aren’t affected, and plants and water elementals make this saving throw with disadvantage. A creature takes 10d8 necrotic damage on a failed save, or half as much damage on a successful one.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 15,
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Absorb Elements",
@@ -28,13 +30,15 @@ module.exports = [
     "Duration": "1 round",
     "Description": "1 Reaction, which you take when you take acid, cold, fire, lightning, or thunder damage\n\nThe spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee attack. You have resistance to the triggering damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 damage of the triggering type, and the spell ends.",
     "AtHigherLevels": "When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 1st.",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 15,
     "Classes": [
       "Druid",
       "Ranger",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Acid Splash",
@@ -51,7 +55,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Aganazzar’s Scorcher",
@@ -63,12 +69,14 @@ module.exports = [
     "Duration": "Instantaneous",
     "Description": "A line of roaring flame 30 feet long and 5 feet wide emanates from you in a direction you choose.\nEach creature in the line must make a Dexterity saving throw. A creature takes 3d8 fire damage on a failed save, or half as much damage on a successful one.",
     "AtHigherLevels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 15,
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Aid",
@@ -85,7 +93,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Alarm (Ritual)",
@@ -102,7 +112,9 @@ module.exports = [
     "Classes": [
       "Ranger",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Alter Self",
@@ -119,7 +131,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Animal Friendship",
@@ -137,7 +151,9 @@ module.exports = [
       "Bard",
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Animal Messenger (Ritual)",
@@ -155,7 +171,9 @@ module.exports = [
       "Bard",
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Animal Shapes",
@@ -171,7 +189,9 @@ module.exports = [
     "SourcePage": 212,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Animate Dead",
@@ -188,7 +208,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Animate Objects",
@@ -206,7 +228,9 @@ module.exports = [
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Antilife Shell",
@@ -222,7 +246,9 @@ module.exports = [
     "SourcePage": 213,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Antimagic Field",
@@ -239,7 +265,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Antipathy/Sympathy",
@@ -256,7 +284,9 @@ module.exports = [
     "Classes": [
       "Druid",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Arcane Eye",
@@ -272,7 +302,9 @@ module.exports = [
     "SourcePage": 214,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Arcane Gate",
@@ -290,7 +322,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Arcane Lock",
@@ -306,7 +340,9 @@ module.exports = [
     "SourcePage": 215,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Armor of Agathys",
@@ -322,7 +358,9 @@ module.exports = [
     "SourcePage": 215,
     "Classes": [
       "Warlock"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Arms of Hadar",
@@ -338,7 +376,9 @@ module.exports = [
     "SourcePage": 215,
     "Classes": [
       "Warlock"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Astral Projection",
@@ -356,7 +396,9 @@ module.exports = [
       "Cleric",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Augury (Ritual)",
@@ -372,7 +414,9 @@ module.exports = [
     "SourcePage": 215,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Aura of Life",
@@ -388,7 +432,9 @@ module.exports = [
     "SourcePage": 216,
     "Classes": [
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Aura of Purity",
@@ -404,7 +450,9 @@ module.exports = [
     "SourcePage": 216,
     "Classes": [
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Aura of Vitality",
@@ -420,7 +468,9 @@ module.exports = [
     "SourcePage": 216,
     "Classes": [
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Awaken",
@@ -437,7 +487,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Bane",
@@ -454,7 +506,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Cleric"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Banishing Smite",
@@ -470,7 +524,9 @@ module.exports = [
     "SourcePage": 216,
     "Classes": [
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Banishment",
@@ -490,7 +546,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Barkskin",
@@ -507,7 +565,9 @@ module.exports = [
     "Classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Beacon of Hope",
@@ -523,7 +583,9 @@ module.exports = [
     "SourcePage": 217,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Beast Bond",
@@ -535,12 +597,14 @@ module.exports = [
     "Duration": "Concentration, up to 10 minutes",
     "Description": "You establish a telepathic link with one beast you touch that is friendly to you or charmed by you. The spell",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 15,
     "Classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Beast Sense (Ritual)",
@@ -557,7 +621,9 @@ module.exports = [
     "Classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": true
   },
   {
     "Name": "Bestow Curse",
@@ -575,7 +641,9 @@ module.exports = [
       "Bard",
       "Cleric",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Bigby’s Hand",
@@ -591,7 +659,9 @@ module.exports = [
     "SourcePage": 218,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Blade Barrier",
@@ -607,7 +677,9 @@ module.exports = [
     "SourcePage": 218,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Blade Ward",
@@ -626,7 +698,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Bless",
@@ -643,7 +717,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Blight",
@@ -662,7 +738,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Blinding Smite",
@@ -678,7 +756,9 @@ module.exports = [
     "SourcePage": 219,
     "Classes": [
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Blindness/Deafness",
@@ -697,7 +777,9 @@ module.exports = [
       "Cleric",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Blink",
@@ -714,7 +796,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Blur",
@@ -731,7 +815,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Bones of the Earth",
@@ -743,11 +829,13 @@ module.exports = [
     "Duration": "Instantaneous",
     "Description": "You cause up to six pillars of stone to burst from places on the ground that you can see within range. Each pillar is a cylinder that has a diameter of 5 feet and a height of up to 30 feet. The ground where a pillar appears must be wide enough for its diameter, and you can target ground under a creature if that creature is Medium or smaller. Each pillar has AC 5 and 30 hit points. When reduced to 0 hit points, a pillar crumbles into rubble, which creates an area of difficult terrain with a 10-foot radius. The rubble lasts until cleared.\nIf a pillar is created under a creature, that creature must succeed on a Dexterity saving throw or be lifted by the pillar. A creature can choose to fail the save.\nIf a pillar is prevented from reaching its full height because of a ceiling or other obstacle, a creature on the pillar takes 6d6 bludgeoning damage and is restrained, pinched between the pillar and the obstacle. The restrained creature can use an action to make a Strength or Dexterity check (the creature’s choice) against the spell’s saving throw DC. On a success, the creature is no longer restrained and must either move off the pillar or fall off it.",
     "AtHigherLevels": "When you cast this spell using a spell slot of 7th level or higher, you can create two additional pillars for each slot level above 6th.",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 15,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Booming Blade",
@@ -765,7 +853,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Branding Smite",
@@ -781,7 +871,9 @@ module.exports = [
     "SourcePage": 219,
     "Classes": [
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Burning Hands",
@@ -798,7 +890,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Call Lightning",
@@ -814,7 +908,9 @@ module.exports = [
     "SourcePage": 220,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Calm Emotions",
@@ -831,7 +927,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Cleric"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Catapult",
@@ -843,12 +941,14 @@ module.exports = [
     "Duration": "Instantaneous",
     "Description": "Choose one object weighing 1 to 5 pounds within range that isn’t being worn or carried. The object flies in a straight line up to 90 feet in a direction you choose before falling to the ground, stopping early if it impacts against a solid surface. If the object would strike a creature, that creature must make a Dexterity saving throw. On a failed save, the object strikes the target and stops moving. In either case, both the object and the creature or solid surface take 3d8 bludgeoning damage.",
     "AtHigherLevels": "When you cast this spell using a spell slot of 2nd level or higher, the maximum weight of objects that you can target with this spell increases by 5 pounds, and the damage increases by 1d8, for each slot level above 1st.",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 15,
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Chain Lightning",
@@ -865,7 +965,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Charm Person",
@@ -885,7 +987,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Chill Touch",
@@ -903,7 +1007,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Chromatic Orb",
@@ -920,7 +1026,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Circle of Death",
@@ -938,7 +1046,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Circle of Power",
@@ -954,7 +1064,9 @@ module.exports = [
     "SourcePage": 221,
     "Classes": [
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Clairvoyance",
@@ -973,7 +1085,9 @@ module.exports = [
       "Cleric",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Clone",
@@ -989,7 +1103,9 @@ module.exports = [
     "SourcePage": 222,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Cloud of Daggers",
@@ -1008,7 +1124,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Cloudkill",
@@ -1025,7 +1143,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Color Spray",
@@ -1042,7 +1162,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Command",
@@ -1059,7 +1181,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Commune (Ritual)",
@@ -1075,7 +1199,9 @@ module.exports = [
     "SourcePage": 223,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Commune with Nature (Ritual)",
@@ -1092,7 +1218,9 @@ module.exports = [
     "Classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Compelled Duel",
@@ -1108,7 +1236,9 @@ module.exports = [
     "SourcePage": 224,
     "Classes": [
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Comprehend Languages (Ritual)",
@@ -1127,7 +1257,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Compulsion",
@@ -1143,7 +1275,9 @@ module.exports = [
     "SourcePage": 224,
     "Classes": [
       "Bard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Cone of Cold",
@@ -1160,7 +1294,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Confusion",
@@ -1179,7 +1315,9 @@ module.exports = [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Conjure Animals",
@@ -1196,7 +1334,9 @@ module.exports = [
     "Classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Conjure Barrage",
@@ -1212,7 +1352,9 @@ module.exports = [
     "SourcePage": 225,
     "Classes": [
       "Ranger"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Conjure Celestial",
@@ -1228,7 +1370,9 @@ module.exports = [
     "SourcePage": 225,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Conjure Elemental",
@@ -1245,7 +1389,9 @@ module.exports = [
     "Classes": [
       "Druid",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Conjure Fey",
@@ -1262,7 +1408,9 @@ module.exports = [
     "Classes": [
       "Druid",
       "Warlock"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Conjure Minor Elementals",
@@ -1279,7 +1427,9 @@ module.exports = [
     "Classes": [
       "Druid",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Conjure Volley",
@@ -1295,7 +1445,9 @@ module.exports = [
     "SourcePage": 226,
     "Classes": [
       "Ranger"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Conjure Woodland Beings",
@@ -1312,7 +1464,9 @@ module.exports = [
     "Classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Contact Other Plane (Ritual)",
@@ -1329,7 +1483,9 @@ module.exports = [
     "Classes": [
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Contagion",
@@ -1346,7 +1502,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Contingency",
@@ -1362,7 +1520,9 @@ module.exports = [
     "SourcePage": 227,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Continual Flame",
@@ -1379,7 +1539,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Control Flames",
@@ -1391,13 +1553,15 @@ module.exports = [
     "Duration": "Instantaneous or 1 hour",
     "Description": "You choose nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:\n• You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.\n• You instantaneously extinguish the flames within the cube.\n• You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.\n• You cause simple shapes—such as the vague form of a creature, an inanimate object, or a location—to appear within the flames and animate as you like. The shapes last for 1 hour.\nIf you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 16,
     "Classes": [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Control Water",
@@ -1415,7 +1579,9 @@ module.exports = [
       "Cleric",
       "Druid",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Control Weather",
@@ -1433,7 +1599,9 @@ module.exports = [
       "Cleric",
       "Druid",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Control Winds",
@@ -1445,13 +1613,15 @@ module.exports = [
     "Duration": "Concentration, up to 1 hour",
     "Description": "You take control of the air in a 100-foot cube that you can see within range. Choose one of the following effects when you cast the spell. The effect lasts for the spell’s duration, unless you use your action on a later turn to switch to a different effect. You can also use your action to temporarily halt the effect or to restart one you’ve halted.\nGusts. A wind picks up within the cube, continually blowing in a horizontal direction that you choose. You choose the intensity of the wind: calm, moderate, or strong. If the wind is moderate or strong, ranged weapon attacks that pass through it or that are made against targets within the cube have disadvantage on their attack rolls. If the wind is strong, any creature moving against the wind must spend 1 extra foot of movement for each foot moved.\n\nDowndraft. You cause a sustained blast of strong wind to blow downward from the top of the cube. Ranged weapon attacks that pass through the cube\nor that are made against targets within it have disadvantage on their attack rolls. A creature must make a Strength saving throw if it flies into the cube for the first time on a turn or starts its turn there flying. On a failed save, the creature is knocked prone.\n\nUpdraft. You cause a sustained updraft within the cube, rising upward from the cube’s bottom edge. Creatures that end a fall within the cube take only half damage from the fall. When a creature in the cube makes a vertical jump, the creature can jump up to 10 feet higher than normal.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 16,
     "Classes": [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Cordon of Arrows",
@@ -1467,7 +1637,9 @@ module.exports = [
     "SourcePage": 228,
     "Classes": [
       "Ranger"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Counterspell",
@@ -1485,7 +1657,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Create Bonfire",
@@ -1497,14 +1671,16 @@ module.exports = [
     "Duration": "Concentration, up to 1 minute",
     "Description": "You create a bonfire on ground that you can see within range. Until the spells ends, the bonfire fills a 5-foot cube. Any creature in the bonfire’s space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it enters the bonfire’s space for the first time on a turn or ends its turn there.\nThe spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 16,
     "Classes": [
       "Druid",
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Create Food and Water",
@@ -1521,7 +1697,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Create Undead",
@@ -1539,7 +1717,9 @@ module.exports = [
       "Cleric",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Create or Destroy Water",
@@ -1556,7 +1736,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Creation",
@@ -1573,7 +1755,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Crown of Madness",
@@ -1592,7 +1776,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Crusader’s Mantle",
@@ -1608,7 +1794,9 @@ module.exports = [
     "SourcePage": 230,
     "Classes": [
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Cure Wounds",
@@ -1628,7 +1816,9 @@ module.exports = [
       "Druid",
       "Paladin",
       "Ranger"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Dancing Lights",
@@ -1646,7 +1836,9 @@ module.exports = [
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Darkness",
@@ -1664,7 +1856,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Darkvision",
@@ -1683,7 +1877,9 @@ module.exports = [
       "Wizard",
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Daylight",
@@ -1703,7 +1899,9 @@ module.exports = [
       "Paladin",
       "Ranger",
       "Sorcerer"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Death Ward",
@@ -1720,7 +1918,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Delayed Blast Fireball",
@@ -1737,7 +1937,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Demiplane",
@@ -1754,7 +1956,9 @@ module.exports = [
     "Classes": [
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Destructive Wave",
@@ -1770,7 +1974,9 @@ module.exports = [
     "SourcePage": 231,
     "Classes": [
       "Paladin"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Detect Evil and Good",
@@ -1787,7 +1993,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Detect Magic (Ritual)",
@@ -1809,7 +2017,9 @@ module.exports = [
       "Ranger",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": true
   },
   {
     "Name": "Detect Poison and Disease",
@@ -1828,7 +2038,9 @@ module.exports = [
       "Druid",
       "Paladin",
       "Ranger"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Detect Thoughts",
@@ -1846,7 +2058,9 @@ module.exports = [
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Dimension Door",
@@ -1865,7 +2079,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Disguise Self",
@@ -1883,7 +2099,9 @@ module.exports = [
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Disintegrate",
@@ -1900,7 +2118,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Dispel Evil and Good",
@@ -1917,7 +2137,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Dispel Magic",
@@ -1939,7 +2161,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Dissonant Whispers",
@@ -1955,7 +2179,9 @@ module.exports = [
     "SourcePage": 234,
     "Classes": [
       "Bard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Divination (Ritual)",
@@ -1971,7 +2197,9 @@ module.exports = [
     "SourcePage": 234,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Divine Favor",
@@ -1987,7 +2215,9 @@ module.exports = [
     "SourcePage": 234,
     "Classes": [
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Divine Word",
@@ -2003,7 +2233,9 @@ module.exports = [
     "SourcePage": 234,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Dominate Beast",
@@ -2020,7 +2252,9 @@ module.exports = [
     "Classes": [
       "Druid",
       "Sorcerer"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Dominate Monster",
@@ -2039,7 +2273,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Dominate Person",
@@ -2057,7 +2293,9 @@ module.exports = [
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Drawmij’s Instant Summons (Ritual)",
@@ -2073,7 +2311,9 @@ module.exports = [
     "SourcePage": 235,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Dream",
@@ -2091,7 +2331,9 @@ module.exports = [
       "Bard",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Druidcraft",
@@ -2107,7 +2349,9 @@ module.exports = [
     "SourcePage": 236,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Dust Devil",
@@ -2119,13 +2363,15 @@ module.exports = [
     "Duration": "Concentration, up to 1 minute",
     "Description": "Choose an unoccupied 5-foot cube of air that you can see within range. An elemental force that resembles a dust devil appears in the cube and lasts for the spell’s duration.",
     "AtHigherLevels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 17,
     "Classes": [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Earth Tremor",
@@ -2137,14 +2383,16 @@ module.exports = [
     "Duration": "Instantaneous",
     "Description": "You cause a tremor in the ground in a 10-foot radius. Each creature other than you in that area must make a Dexterity saving throw. On a failed save, a creature takes 1d6 bludgeoning damage and is knocked prone. If the ground in that area is loose earth or stone, it becomes difficult terrain until cleared.",
     "AtHigherLevels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 17,
     "Classes": [
       "Bard",
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Earthbind",
@@ -2156,14 +2404,16 @@ module.exports = [
     "Duration": "Concentration, up to 1 minute",
     "Description": "Choose one creature you can see within range. Yellow strips of magical energy loop around the creature. The target must succeed on a Strength saving throw or its flying speed (if any) is reduced to 0 feet for the spell’s duration. An airborne creature affected by this spell descends at 60 feet per round until it reaches the ground or the spell ends.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 17,
     "Classes": [
       "Druid",
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Earthquake",
@@ -2181,7 +2431,9 @@ module.exports = [
       "Cleric",
       "Druid",
       "Sorcerer"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Eldritch Blast",
@@ -2197,7 +2449,9 @@ module.exports = [
     "SourcePage": 237,
     "Classes": [
       "Warlock"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Elemental Bane",
@@ -2209,13 +2463,15 @@ module.exports = [
     "Duration": "Concentration, up to 1 minute",
     "Description": "Choose one creature you can see within range, and choose one of the following damage types: acid, cold, fire, lightning, or thunder.\nThe target must succeed on a Constitution saving throw or be affected by the spell for its duration. The first time each turn the affected target takes damage of the chosen type, the target takes an extra 2d6 damage of that type. Moreover, the target loses any resistance to that damage type until the spell ends.",
     "AtHigherLevels": "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th. The creatures must be within 30 feet of each other when you target them.",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 17,
     "Classes": [
       "Druid",
       "Wizard",
       "Warlock"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Elemental Weapon",
@@ -2231,7 +2487,9 @@ module.exports = [
     "SourcePage": 237,
     "Classes": [
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Enhance Ability",
@@ -2250,7 +2508,9 @@ module.exports = [
       "Cleric",
       "Druid",
       "Sorcerer"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Enlarge/Reduce",
@@ -2267,7 +2527,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Ensnaring Strike",
@@ -2283,7 +2545,9 @@ module.exports = [
     "SourcePage": 237,
     "Classes": [
       "Ranger"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Entangle",
@@ -2299,7 +2563,9 @@ module.exports = [
     "SourcePage": 238,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Enthrall",
@@ -2316,7 +2582,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Warlock"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Erupting Earth",
@@ -2328,13 +2596,15 @@ module.exports = [
     "Duration": "Instantaneous",
     "Description": "Choose a point you can see on the ground within range. A fountain of churned earth and stone erupts in a 20-foot cube centered on that point. Each creature",
     "AtHigherLevels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d12 for each slot level above 2nd.",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 17,
     "Classes": [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Etherealness",
@@ -2354,7 +2624,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Evard’s Black Tentacles",
@@ -2370,7 +2642,9 @@ module.exports = [
     "SourcePage": 238,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Expeditious Retreat",
@@ -2388,7 +2662,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Eyebite",
@@ -2407,7 +2683,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Fabricate",
@@ -2423,7 +2701,9 @@ module.exports = [
     "SourcePage": 239,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Faerie Fire",
@@ -2440,7 +2720,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Druid"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "False Life",
@@ -2457,7 +2739,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Fear",
@@ -2476,7 +2760,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Feather Fall",
@@ -2494,7 +2780,9 @@ module.exports = [
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Feeblemind",
@@ -2513,7 +2801,9 @@ module.exports = [
       "Druid",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Feign Death (Ritual)",
@@ -2532,7 +2822,9 @@ module.exports = [
       "Cleric",
       "Druid",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Find Familiar (Ritual)",
@@ -2548,7 +2840,9 @@ module.exports = [
     "SourcePage": 240,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Find Steed",
@@ -2564,7 +2858,9 @@ module.exports = [
     "SourcePage": 240,
     "Classes": [
       "Paladin"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Find Traps",
@@ -2582,7 +2878,9 @@ module.exports = [
       "Cleric",
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Find the Path",
@@ -2600,7 +2898,9 @@ module.exports = [
       "Bard",
       "Cleric",
       "Druid"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Finger of Death",
@@ -2618,7 +2918,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Fire Bolt",
@@ -2635,7 +2937,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Fire Shield",
@@ -2651,7 +2955,9 @@ module.exports = [
     "SourcePage": 241,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Fire Storm",
@@ -2669,7 +2975,9 @@ module.exports = [
       "Cleric",
       "Druid",
       "Sorcerer"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Fireball",
@@ -2686,7 +2994,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Flame Arrows",
@@ -2698,14 +3008,16 @@ module.exports = [
     "Duration": "Concentration, up to 1 hour",
     "Description": "You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra 1d6 fire damage. The spell’s magic ends on the piece of ammunition when it hits or misses, and the spell ends when twelve pieces of ammunition have been drawn from the quiver.",
     "AtHigherLevels": "When you cast this spell using a spell slot of 4th level or higher, the number of pieces of ammunition you can affect with this spell increases by two for each slot level above 3rd.",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 18,
     "Classes": [
       "Druid",
       "Ranger",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Flame Blade",
@@ -2721,7 +3033,9 @@ module.exports = [
     "SourcePage": 242,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Flame Strike",
@@ -2737,7 +3051,9 @@ module.exports = [
     "SourcePage": 242,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Flaming Sphere",
@@ -2754,7 +3070,9 @@ module.exports = [
     "Classes": [
       "Druid",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Flesh to Stone",
@@ -2771,7 +3089,9 @@ module.exports = [
     "Classes": [
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Fly",
@@ -2789,7 +3109,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Fog Cloud",
@@ -2808,7 +3130,9 @@ module.exports = [
       "Ranger",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Forbiddance (Ritual)",
@@ -2824,7 +3148,9 @@ module.exports = [
     "SourcePage": 243,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Forcecage",
@@ -2842,7 +3168,9 @@ module.exports = [
       "Bard",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Foresight",
@@ -2861,7 +3189,9 @@ module.exports = [
       "Druid",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Freedom of Movement",
@@ -2880,7 +3210,9 @@ module.exports = [
       "Cleric",
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Friends",
@@ -2899,7 +3231,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Frostbite",
@@ -2911,14 +3245,16 @@ module.exports = [
     "Duration": "Instantaneous",
     "Description": "You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn.\nThe spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 18,
     "Classes": [
       "Druid",
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Gaseous Form",
@@ -2936,7 +3272,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Gate",
@@ -2954,7 +3292,9 @@ module.exports = [
       "Cleric",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Geas",
@@ -2974,7 +3314,9 @@ module.exports = [
       "Druid",
       "Paladin",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Gentle Repose (Ritual)",
@@ -2991,7 +3333,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Giant Insect",
@@ -3007,7 +3351,9 @@ module.exports = [
     "SourcePage": 245,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Glibness",
@@ -3024,7 +3370,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Warlock"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Globe of Invulnerability",
@@ -3041,7 +3389,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Glyph of Warding",
@@ -3055,7 +3405,9 @@ module.exports = [
     "AtHigherLevels": "",
     "SourceBook": "",
     "SourcePage": 0,
-    "Classes": []
+    "Classes": [],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Goodberry",
@@ -3072,7 +3424,9 @@ module.exports = [
     "Classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Grasping Vine",
@@ -3089,7 +3443,9 @@ module.exports = [
     "Classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Grease",
@@ -3105,7 +3461,9 @@ module.exports = [
     "SourcePage": 246,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Greater Invisibility",
@@ -3123,7 +3481,9 @@ module.exports = [
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Greater Restoration",
@@ -3141,7 +3501,9 @@ module.exports = [
       "Bard",
       "Cleric",
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Green-Flame Blade",
@@ -3159,7 +3521,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Guardian of Faith",
@@ -3175,7 +3539,9 @@ module.exports = [
     "SourcePage": 246,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Guards and Wards",
@@ -3192,7 +3558,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Guidance",
@@ -3209,7 +3577,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Druid"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Guiding Bolt",
@@ -3225,7 +3595,9 @@ module.exports = [
     "SourcePage": 248,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Gust",
@@ -3237,13 +3609,15 @@ module.exports = [
     "Duration": "Instantaneous",
     "Description": "You seize the air and compel it to create one of the following effects at a point you can see within range:\n• One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.\n• You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn’t pushed with enough force to cause damage.\n• You create a harmless sensory affect using air, such as causing leaves to rustle, wind to slam shutters shut, or your clothing to ripple in a breeze.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 19,
     "Classes": [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Gust of Wind",
@@ -3261,7 +3635,9 @@ module.exports = [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Hail of Thorns",
@@ -3277,7 +3653,9 @@ module.exports = [
     "SourcePage": 249,
     "Classes": [
       "Ranger"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Hallow",
@@ -3293,7 +3671,9 @@ module.exports = [
     "SourcePage": 249,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Hallucinatory Terrain",
@@ -3312,7 +3692,9 @@ module.exports = [
       "Druid",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Harm",
@@ -3328,7 +3710,9 @@ module.exports = [
     "SourcePage": 249,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Haste",
@@ -3345,7 +3729,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Heal",
@@ -3362,7 +3748,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Healing Word",
@@ -3380,7 +3768,9 @@ module.exports = [
       "Bard",
       "Cleric",
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Heat Metal",
@@ -3397,7 +3787,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Druid"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Hellish Rebuke",
@@ -3413,7 +3805,9 @@ module.exports = [
     "SourcePage": 250,
     "Classes": [
       "Warlock"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Heroes’ Feast",
@@ -3430,7 +3824,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Heroism",
@@ -3447,7 +3843,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Hex",
@@ -3463,7 +3861,9 @@ module.exports = [
     "SourcePage": 251,
     "Classes": [
       "Warlock"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Hold Monster",
@@ -3482,7 +3882,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Hold Person",
@@ -3503,7 +3905,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Holy Aura",
@@ -3519,7 +3923,9 @@ module.exports = [
     "SourcePage": 251,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Hunger of Hadar",
@@ -3535,7 +3941,9 @@ module.exports = [
     "SourcePage": 251,
     "Classes": [
       "Warlock"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Hunter’s Mark",
@@ -3551,7 +3959,9 @@ module.exports = [
     "SourcePage": 251,
     "Classes": [
       "Ranger"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Hypnotic Pattern",
@@ -3570,7 +3980,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Ice Knife",
@@ -3582,13 +3994,15 @@ module.exports = [
     "Duration": "Instantaneous",
     "Description": "You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of the point where the ice exploded must succeed on a Dexterity saving throw or take 2d6 cold damage.",
     "AtHigherLevels": "When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d6 for each slot level above 1st.",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 19,
     "Classes": [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Ice Storm",
@@ -3606,7 +4020,9 @@ module.exports = [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Identify (Ritual)",
@@ -3623,7 +4039,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Illusory Script (Ritual)",
@@ -3641,7 +4059,9 @@ module.exports = [
       "Bard",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Immolation",
@@ -3653,12 +4073,14 @@ module.exports = [
     "Duration": "Concentration, up to 1 minute",
     "Description": "Flames wreathe one creature you can see within range. The target must make a Dexterity saving throw. It takes 7d6 fire damage on a failed save, or half as much damage on a successful one. On a failed save, the target also burns for the spell’s duration. The burning target sheds bright light in a 30-foot radius and dim light for an additional 30 feet. At the end of each of its turns, the target repeats the saving throw. It takes 3d6 fire damage on a failed save, and the spell ends on a successful one. These magical flames can’t be extinguished through nonmagical means.\nIf damage from this spell reduces a target to 0 hit points, the target is turned to ash.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 19,
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Imprisonment",
@@ -3675,7 +4097,9 @@ module.exports = [
     "Classes": [
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Incendiary Cloud",
@@ -3692,7 +4116,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Inflict Wounds",
@@ -3708,7 +4134,9 @@ module.exports = [
     "SourcePage": 253,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Insect Plague",
@@ -3726,7 +4154,9 @@ module.exports = [
       "Cleric",
       "Druid",
       "Sorcerer"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Investiture of Flame",
@@ -3738,14 +4168,16 @@ module.exports = [
     "Duration": "Concentration, up to 10 minutes",
     "Description": "Flames race across your body, shedding bright light in a 30-foot radius and dim light for an additional 30 feet for the spell’s duration. The flames don’t harm you. Until the spell ends, you gain the following benefits:\n• You are immune to fire damage and have resistance to cold damage.\n• Any creature that moves within 5 feet of you for the first time on a turn or ends its turn there takes 1d10 fire damage.\n• You can use your action to create a line of fire 15 feet long and 5 feet wide extending from you in a direc- tion you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 4d8 fire damage on a failed save, or half as much damage on a successful one.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 19,
     "Classes": [
       "Druid",
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Investiture of Ice",
@@ -3757,14 +4189,16 @@ module.exports = [
     "Duration": "Concentration, up to 10 minutes",
     "Description": "Until the spell ends, ice rimes your body, and you gain the following benefits:\n• You are immune to cold damage and have resistance to fire damage.\n• You can move across difficult terrain created by ice or snow without spending extra movement.\n• The ground in a 10-foot radius around you is icy and is difficult terrain for creatures other than you. The radius moves with you.\n• You can use your action to create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw. A creature takes 4d6 cold damage on a failed save, or half as much damage on a successful one. A creature that fails its save against this effect has its speed halved until the start of your next turn.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 19,
     "Classes": [
       "Druid",
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Investiture of Stone",
@@ -3776,14 +4210,16 @@ module.exports = [
     "Duration": "Concentration, up to 10 minutes",
     "Description": "Until the spell ends, bits of rock spread across your body, and you gain the following benefits:\n• You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.\n• You can use your action to create a small earthquake on the ground in a 15-foot radius centered on you. Other creatures on that ground must succeed on a Dexterity saving throw or be knocked prone.\n• You can move across difficult terrain made of earth or stone without spending extra movement. You can move through solid earth or stone as if it was air and without destabilizing it, but you can’t end your movement there. If you do so, you are ejected to the nearest unoccupied space, this spell ends, and you are stunned until the end of your next turn.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 19,
     "Classes": [
       "Druid",
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Investiture of Wind",
@@ -3795,14 +4231,16 @@ module.exports = [
     "Duration": "Concentration, up to 10 minutes",
     "Description": "Until the spell ends, wind whirls around you, and you gain the following benefits:\n• Ranged weapon attacks made against you have disad- vantage on the attack roll.\n• You gain a flying speed of 60 feet. If you are still flying when the spell ends, you fall, unless you can some- how prevent it.\n• You can use your action to create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of you. Each creature in that area must make a Constitution saving throw. A creature takes 2d10 bludgeoning damage on a failed save, or half as much damage on a successful one. If a Large or smaller creature fails the save, that creature is also pushed up to 10 feet away from the center of the cube.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 20,
     "Classes": [
       "Druid",
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Invisibility",
@@ -3821,7 +4259,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Jump",
@@ -3840,7 +4280,9 @@ module.exports = [
       "Ranger",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Knock",
@@ -3858,7 +4300,9 @@ module.exports = [
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Legend Lore",
@@ -3876,7 +4320,9 @@ module.exports = [
       "Bard",
       "Cleric",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Leomund’s Secret Chest",
@@ -3892,7 +4338,9 @@ module.exports = [
     "SourcePage": 254,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Leomund’s Tiny Hut (Ritual)",
@@ -3909,7 +4357,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Lesser Restoration",
@@ -3929,7 +4379,9 @@ module.exports = [
       "Druid",
       "Paladin",
       "Ranger"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Levitate",
@@ -3946,7 +4398,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Light",
@@ -3965,7 +4419,9 @@ module.exports = [
       "Cleric",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Lightning Arrow",
@@ -3981,7 +4437,9 @@ module.exports = [
     "SourcePage": 255,
     "Classes": [
       "Ranger"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Lightning Bolt",
@@ -3998,7 +4456,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Lightning Lure",
@@ -4016,7 +4476,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Locate Animals or Plants (Ritual)",
@@ -4034,7 +4496,9 @@ module.exports = [
       "Bard",
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Locate Creature",
@@ -4055,7 +4519,9 @@ module.exports = [
       "Paladin",
       "Ranger",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Locate Object",
@@ -4076,7 +4542,9 @@ module.exports = [
       "Paladin",
       "Ranger",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Longstrider",
@@ -4095,7 +4563,9 @@ module.exports = [
       "Druid",
       "Ranger",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Maelstrom",
@@ -4107,11 +4577,13 @@ module.exports = [
     "Duration": "Concentration, up to 1 minute",
     "Description": "A mass of 5-foot-deep water appears and swirls in a 30-foot radius centered on a point you can see within range. The point must be on ground or in a body of water. Until the spell ends, that area is difficult terrain, and any creature that starts its turn there must succeed on a Strength saving throw or take 6d6 bludgeoning damage and be pulled 10 feet toward the center.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 20,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Mage Armor",
@@ -4128,7 +4600,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Mage Hand",
@@ -4147,7 +4621,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Magic Circle",
@@ -4166,7 +4642,9 @@ module.exports = [
       "Paladin",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Magic Jar",
@@ -4182,7 +4660,9 @@ module.exports = [
     "SourcePage": 257,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Magic Missile",
@@ -4199,7 +4679,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Magic Mouth (Ritual)",
@@ -4216,7 +4698,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Magic Stone",
@@ -4228,12 +4712,14 @@ module.exports = [
     "Duration": "1 minute",
     "Description": "You touch one to three pebbles and imbue them with magic. You or someone else can make a ranged spell attack with one of the pebbles by throwing it or hurling it with a sling. If thrown, it has a range of 60 feet. If someone else attacks with the pebble, that attacker adds your spellcasting ability modifier, not the attacker’s, to the attack roll. On a hit, the target takes bludgeoning damage equal to 1d6 + your spellcasting ability modifier. Hit or miss, the spell then ends on the stone.\nIf you cast this spell again, the spell ends early on any pebbles still affected by it.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 20,
     "Classes": [
       "Druid",
       "Warlock"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Magic Weapon",
@@ -4250,7 +4736,9 @@ module.exports = [
     "Classes": [
       "Paladin",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Major Image",
@@ -4269,7 +4757,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Mass Cure Wounds",
@@ -4287,7 +4777,9 @@ module.exports = [
       "Bard",
       "Cleric",
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Mass Heal",
@@ -4303,7 +4795,9 @@ module.exports = [
     "SourcePage": 258,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Mass Healing Word",
@@ -4319,7 +4813,9 @@ module.exports = [
     "SourcePage": 258,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Mass Suggestion",
@@ -4338,7 +4834,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Maximilian’s Earthen Grasp",
@@ -4350,12 +4848,14 @@ module.exports = [
     "Duration": "Concentration, up to 1 minute",
     "Description": "You choose a 5-foot-square unoccupied space on the ground that you can see within range. A Medium hand made from compacted soil rises there and reaches\nfor one creature you can see within 5 feet of it. The target must make a Strength saving throw. On a failed save, the target takes 2d6 bludgeoning damage and is restrained for the spell’s duration.\nAs an action, you can cause the hand to crush the restrained target, who must make a Strength saving throw. It takes 2d6 bludgeoning damage on a failed save, or half as much damage on a successful one.\nTo break out, the restrained target can make a Strength check against your spell save DC. On a success, the target escapes and is no longer restrained by the hand.\nAs an action, you can cause the hand to reach for a different creature or to move to a different unoccupied space within range. The hand releases a restrained target if you do either.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 20,
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Maze",
@@ -4371,7 +4871,9 @@ module.exports = [
     "SourcePage": 258,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Meld into Stone (Ritual)",
@@ -4388,7 +4890,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Melf’s Acid Arrow",
@@ -4404,7 +4908,9 @@ module.exports = [
     "SourcePage": 259,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Melf’s Minute Meteors",
@@ -4416,12 +4922,14 @@ module.exports = [
     "Duration": "Concentration, up to 10 minutes",
     "Description": "You create six tiny meteors in your space. They float in the air and orbit you for the spell’s duration. When you cast the spell—and as a bonus action on each of your turns thereafter—you can expend one or two of the meteors, sending them streaking toward a point or points you choose within 120 feet of you. Once a meteor reaches its destination or impacts against a solid surface, the meteor explodes. Each creature within 5 feet of the point where the meteor explodes must make a Dexterity saving throw. A creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.",
     "AtHigherLevels": "When you cast this spell using a spell slot of 4th level or higher, the number of meteors created increases by two for each slot level above 3rd.",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 20,
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Mending",
@@ -4441,7 +4949,9 @@ module.exports = [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Message",
@@ -4459,7 +4969,9 @@ module.exports = [
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Meteor Swarm",
@@ -4476,7 +4988,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Mind Blank",
@@ -4493,7 +5007,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Minor Illusion",
@@ -4512,7 +5028,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Mirage Arcane",
@@ -4530,7 +5048,9 @@ module.exports = [
       "Bard",
       "Druid",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Mirror Image",
@@ -4548,7 +5068,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Mislead",
@@ -4565,7 +5087,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Misty Step",
@@ -4583,7 +5107,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Modify Memory",
@@ -4600,7 +5126,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Mold earth",
@@ -4612,13 +5140,15 @@ module.exports = [
     "Duration": "Instantaneous or 1 hour",
     "Description": "You choose a portion of dirt or stone that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:\n• If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn’t have enough force to cause damage.\n• You cause shapes, colors, or both to appear on the dirt or stone, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.\n• If the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour. If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 21,
     "Classes": [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Moonbeam",
@@ -4634,7 +5164,9 @@ module.exports = [
     "SourcePage": 261,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Mordenkainen’s Faithful Hound",
@@ -4650,7 +5182,9 @@ module.exports = [
     "SourcePage": 261,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Mordenkainen’s Magnificent Mansion",
@@ -4667,7 +5201,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Mordenkainen’s Private Sanctum",
@@ -4683,7 +5219,9 @@ module.exports = [
     "SourcePage": 262,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Mordenkainen’s Sword",
@@ -4700,7 +5238,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Move Earth",
@@ -4718,7 +5258,9 @@ module.exports = [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Nondetection",
@@ -4736,7 +5278,9 @@ module.exports = [
       "Bard",
       "Ranger",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Nystul’s Magic Aura",
@@ -4752,7 +5296,9 @@ module.exports = [
     "SourcePage": 263,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Otiluke’s Freezing Sphere",
@@ -4768,7 +5314,9 @@ module.exports = [
     "SourcePage": 263,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Otiluke’s Resilient Sphere",
@@ -4784,7 +5332,9 @@ module.exports = [
     "SourcePage": 264,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Otto’s Irresistible Dance",
@@ -4801,7 +5351,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Pass Without Trace",
@@ -4818,7 +5370,9 @@ module.exports = [
     "Classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Passwall",
@@ -4834,7 +5388,9 @@ module.exports = [
     "SourcePage": 264,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Phantasmal Force",
@@ -4852,7 +5408,9 @@ module.exports = [
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Phantasmal Killer",
@@ -4868,7 +5426,9 @@ module.exports = [
     "SourcePage": 265,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Phantom Steed (Ritual)",
@@ -4884,7 +5444,9 @@ module.exports = [
     "SourcePage": 265,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Planar Ally",
@@ -4900,7 +5462,9 @@ module.exports = [
     "SourcePage": 265,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Planar Binding",
@@ -4919,7 +5483,9 @@ module.exports = [
       "Cleric",
       "Druid",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Plane Shift",
@@ -4939,7 +5505,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Plant Growth",
@@ -4957,7 +5525,9 @@ module.exports = [
       "Bard",
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Poison Spray",
@@ -4976,7 +5546,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Polymorph",
@@ -4995,7 +5567,9 @@ module.exports = [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Power Word Heal",
@@ -5011,7 +5585,9 @@ module.exports = [
     "SourcePage": 266,
     "Classes": [
       "Bard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Power Word Kill",
@@ -5030,7 +5606,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Power Word Stun",
@@ -5049,7 +5627,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Prayer of Healing",
@@ -5065,7 +5645,9 @@ module.exports = [
     "SourcePage": 267,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Prestidigitation",
@@ -5084,7 +5666,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Primordial Ward",
@@ -5096,11 +5680,13 @@ module.exports = [
     "Duration": "Concentration, up to 1 minute",
     "Description": "You have resistance to acid, cold, fire, lightning, and thunder damage for the spell’s duration.\nWhen you take damage of one of those types, you can use your reaction to gain immunity to that type\nof damage, including against the triggering damage. If you do so, the resistances end, and you have the immunity until the end of your next turn, at which time the spell ends.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 21,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Prismatic Spray",
@@ -5117,7 +5703,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Prismatic Wall",
@@ -5133,7 +5721,9 @@ module.exports = [
     "SourcePage": 267,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Produce Flame",
@@ -5149,7 +5739,9 @@ module.exports = [
     "SourcePage": 269,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Programmed Illusion",
@@ -5166,7 +5758,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Project Image",
@@ -5183,7 +5777,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Protection from Energy",
@@ -5203,7 +5799,9 @@ module.exports = [
       "Ranger",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Protection from Evil and Good",
@@ -5222,7 +5820,9 @@ module.exports = [
       "Paladin",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Protection from Poison",
@@ -5241,7 +5841,9 @@ module.exports = [
       "Druid",
       "Paladin",
       "Ranger"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Purify Food and Drink (Ritual)",
@@ -5259,7 +5861,9 @@ module.exports = [
       "Cleric",
       "Druid",
       "Paladin"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Pyrotechnics",
@@ -5271,13 +5875,15 @@ module.exports = [
     "Duration": "Instantaneous",
     "Description": "Choose an area of flame that you can see and that can fit within a 5-foot cube within range. You can extinguish the fire in that area, and you create either fireworks or smoke. Fireworks. The target explodes with a dazzling display of colors. Each creature within 10 feet of the target must succeed on a Constitution saving throw or become blinded until the end of your next turn. Smoke. Thick black smoke spreads out from the target in a 20-foot radius, moving around corners. The area of the smoke is heavily obscured. The smoke persists for 1 minute or until a strong wind disperses it.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 21,
     "Classes": [
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Raise Dead",
@@ -5295,7 +5901,9 @@ module.exports = [
       "Bard",
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Rary’s Telepathic Bond (Ritual)",
@@ -5311,7 +5919,9 @@ module.exports = [
     "SourcePage": 270,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Ray of Enfeeblement",
@@ -5328,7 +5938,9 @@ module.exports = [
     "Classes": [
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Ray of Frost",
@@ -5345,7 +5957,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Ray of Sickness",
@@ -5362,7 +5976,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Regenerate",
@@ -5380,7 +5996,9 @@ module.exports = [
       "Bard",
       "Cleric",
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Reincarnate",
@@ -5396,7 +6014,9 @@ module.exports = [
     "SourcePage": 271,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Remove Curse",
@@ -5415,7 +6035,9 @@ module.exports = [
       "Paladin",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Resistance",
@@ -5432,7 +6054,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Druid"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Resurrection",
@@ -5449,7 +6073,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Reverse Gravity",
@@ -5467,7 +6093,9 @@ module.exports = [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Revivify",
@@ -5484,7 +6112,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Rope Trick",
@@ -5500,7 +6130,9 @@ module.exports = [
     "SourcePage": 272,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Sacred Flame",
@@ -5516,7 +6148,9 @@ module.exports = [
     "SourcePage": 272,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Sanctuary",
@@ -5532,7 +6166,9 @@ module.exports = [
     "SourcePage": 272,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Scorching Ray",
@@ -5549,7 +6185,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Scrying",
@@ -5569,7 +6207,9 @@ module.exports = [
       "Druid",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Searing Smite",
@@ -5585,7 +6225,9 @@ module.exports = [
     "SourcePage": 274,
     "Classes": [
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "See invisibility",
@@ -5603,7 +6245,9 @@ module.exports = [
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Seeming",
@@ -5621,7 +6265,9 @@ module.exports = [
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Sending",
@@ -5639,7 +6285,9 @@ module.exports = [
       "Bard",
       "Cleric",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Sequester",
@@ -5655,7 +6303,9 @@ module.exports = [
     "SourcePage": 274,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Shape Water",
@@ -5667,13 +6317,15 @@ module.exports = [
     "Duration": "Instantaneous or 1 hour",
     "Description": "You choose an area of water that you can see within range and that fits within a 5-foot cube.\nYou manipulate it in one of the following ways:\n\n• You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn’t have enough force to cause damage.\n\n• You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour.\n\n• You change the water’s color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.\n\n• You freeze the water, provided that there are no crea- tures in it. The water unfreezes in 1 hour.\nIf you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 21,
     "Classes": [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Shapechange",
@@ -5690,7 +6342,9 @@ module.exports = [
     "Classes": [
       "Druid",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Shatter",
@@ -5709,7 +6363,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Shield",
@@ -5726,7 +6382,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Shield of Faith",
@@ -5743,7 +6401,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Shillelagh",
@@ -5759,7 +6419,9 @@ module.exports = [
     "SourcePage": 275,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Shocking Grasp",
@@ -5776,7 +6438,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Silence (Ritual)",
@@ -5794,7 +6458,9 @@ module.exports = [
       "Bard",
       "Cleric",
       "Ranger"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": true
   },
   {
     "Name": "Silent Image",
@@ -5812,7 +6478,9 @@ module.exports = [
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Simulacrum",
@@ -5828,7 +6496,9 @@ module.exports = [
     "SourcePage": 276,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Skywrite (Ritual)",
@@ -5840,13 +6510,15 @@ module.exports = [
     "Duration": "Concentration, up to 1 day",
     "Description": "You cause up to ten words to form in a part of the sky you can see. The words appear to be made of cloud and remain in place for the spell’s duration. The words dissipate when the spell ends. A strong wind can disperse the clouds and end the spell early.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 22,
     "Classes": [
       "Bard",
       "Druid",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": true
   },
   {
     "Name": "Sleep",
@@ -5864,7 +6536,9 @@ module.exports = [
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Sleet Storm",
@@ -5882,7 +6556,9 @@ module.exports = [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Slow",
@@ -5899,7 +6575,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Snilloc’s Snowball Swarm",
@@ -5911,12 +6589,14 @@ module.exports = [
     "Duration": "Instantaneous",
     "Description": "A flurry of magic snowballs erupts from a point you choose within range. Each creature in a 5-foot-radius sphere centered on that point must make a Dexterity saving throw. A creature takes 3d6 cold damage on a failed save, or half as much damage on a successful one.",
     "AtHigherLevels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 22,
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Spare the Dying",
@@ -5932,7 +6612,9 @@ module.exports = [
     "SourcePage": 277,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Speak with Animals (Ritual)",
@@ -5950,7 +6632,9 @@ module.exports = [
       "Bard",
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Speak with Dead",
@@ -5967,7 +6651,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Speak with Plants",
@@ -5985,7 +6671,9 @@ module.exports = [
       "Bard",
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Spider Climb",
@@ -6003,7 +6691,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Spike Growth",
@@ -6020,7 +6710,9 @@ module.exports = [
     "Classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Spirit Guardians",
@@ -6036,7 +6728,9 @@ module.exports = [
     "SourcePage": 278,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Spiritual Weapon",
@@ -6052,7 +6746,9 @@ module.exports = [
     "SourcePage": 278,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Staggering Smite",
@@ -6068,7 +6764,9 @@ module.exports = [
     "SourcePage": 278,
     "Classes": [
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Stinking Cloud",
@@ -6086,7 +6784,9 @@ module.exports = [
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Stone Shape",
@@ -6104,7 +6804,9 @@ module.exports = [
       "Cleric",
       "Druid",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Stoneskin",
@@ -6123,7 +6825,9 @@ module.exports = [
       "Ranger",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Storm Sphere",
@@ -6135,12 +6839,14 @@ module.exports = [
     "Duration": "Concentration, up to 1 minute",
     "Description": "A 20-foot-radius sphere of whirling air springs into existence centered on a point you choose within range. The sphere remains for the spell’s duration. Each creature in the sphere when it appears or that ends its turn there must succeed on a Strength saving throw or take 2d6 bludgeoning damage. The sphere’s space is difficult terrain.\nUntil the spell ends, you can use a bonus action on each of your turns to cause a bolt of lightning to leap from the center of the sphere toward one creature you choose within 60 feet of the center. Make a ranged spell attack. You have advantage on the attack roll if the target is in the sphere. On a hit, the target takes 4d6 lightning damage.\nCreatures within 30 feet of the sphere have disadvantage on Wisdom (Perception) checks made to listen.",
     "AtHigherLevels": "When you cast this spell using a spell slot of 5th level or higher, the damage increases for each of its effects by 1d6 for each slot level above 4th.",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 22,
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Storm of Vengeance",
@@ -6156,7 +6862,9 @@ module.exports = [
     "SourcePage": 279,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Suggestion",
@@ -6175,7 +6883,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Sunbeam",
@@ -6193,7 +6903,9 @@ module.exports = [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Sunburst",
@@ -6211,7 +6923,9 @@ module.exports = [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Swift Quiver",
@@ -6227,7 +6941,9 @@ module.exports = [
     "SourcePage": 279,
     "Classes": [
       "Ranger"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Sword Burst",
@@ -6245,7 +6961,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Symbol",
@@ -6263,7 +6981,9 @@ module.exports = [
       "Bard",
       "Cleric",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Tasha’s Hideous Laughter",
@@ -6280,7 +7000,9 @@ module.exports = [
     "Classes": [
       "Bard",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Telekinesis",
@@ -6297,7 +7019,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Telepathy",
@@ -6313,7 +7037,9 @@ module.exports = [
     "SourcePage": 281,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Teleport",
@@ -6331,7 +7057,9 @@ module.exports = [
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Teleportation Circle",
@@ -6349,7 +7077,9 @@ module.exports = [
       "Bard",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Tenser’s Floating Disk (Ritual)",
@@ -6365,7 +7095,9 @@ module.exports = [
     "SourcePage": 282,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Thaumaturgy",
@@ -6381,7 +7113,9 @@ module.exports = [
     "SourcePage": 282,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Thorn Whip",
@@ -6397,7 +7131,9 @@ module.exports = [
     "SourcePage": 282,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Thunderclap",
@@ -6409,7 +7145,7 @@ module.exports = [
     "Duration": "Instantaneous",
     "Description": "You create a burst of thunderous sound, which can be heard 100 feet away.\nEach creature other than you within 5 feet of you must make a Constitution saving throw. On a failed save, the creature takes 1d6 thunder damage.\nThe spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 22,
     "Classes": [
       "Bard",
@@ -6417,7 +7153,9 @@ module.exports = [
       "Druid",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Thunderous Smite",
@@ -6433,7 +7171,9 @@ module.exports = [
     "SourcePage": 282,
     "Classes": [
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Thunderwave",
@@ -6452,7 +7192,9 @@ module.exports = [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Tidal Wave",
@@ -6464,12 +7206,14 @@ module.exports = [
     "Duration": "Instantaneous",
     "Description": "You conjure up a wave of water that crashes down on an area within range. The area can be up to 30 feet long, up to 10 feet wide, and up to 10 feet tall. Each creature in that area must make a Dexterity saving throw. On a failure, a creature takes 4d8 bludgeoning damage and is knocked prone. On a success, a creature takes half as much damage and isn’t knocked prone. The water then spreads out across the ground in all directions, extinguishing unprotected flames in its area and within 30 feet of it.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 22,
     "Classes": [
       "Druid",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Time Stop",
@@ -6486,7 +7230,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Tongues",
@@ -6506,7 +7252,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Transmute Rock",
@@ -6518,12 +7266,14 @@ module.exports = [
     "Duration": "Instantaneous",
     "Description": "You choose an area of stone or mud that you can see that fits within a 40-foot cube and that is within range, and choose one of the following effects.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 22,
     "Classes": [
       "Druid",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Transport via Plants",
@@ -6539,7 +7289,9 @@ module.exports = [
     "SourcePage": 283,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Tree Stride",
@@ -6556,7 +7308,9 @@ module.exports = [
     "Classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "True Polymorph",
@@ -6574,7 +7328,9 @@ module.exports = [
       "Bard",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "True Resurrection",
@@ -6591,7 +7347,9 @@ module.exports = [
     "Classes": [
       "Cleric",
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "True Seeing",
@@ -6611,7 +7369,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "True Strike",
@@ -6630,7 +7390,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Tsunami",
@@ -6646,7 +7408,9 @@ module.exports = [
     "SourcePage": 284,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Unseen Servant (Ritual)",
@@ -6664,7 +7428,9 @@ module.exports = [
       "Bard",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Vampiric Touch",
@@ -6681,7 +7447,9 @@ module.exports = [
     "Classes": [
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Vicious Mockery",
@@ -6697,7 +7465,9 @@ module.exports = [
     "SourcePage": 285,
     "Classes": [
       "Bard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Vitriolic Sphere",
@@ -6709,12 +7479,14 @@ module.exports = [
     "Duration": "Instantaneous",
     "Description": "You point at a place within range, and a glowing 1-foot ball of emerald acid streaks there and explodes in a 20-foot radius. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes 10d4 acid damage and 5d4 acid damage at the end of its next turn. On a successful save, a creature takes half the initial damage and no damage at the end of",
     "AtHigherLevels": "When you cast this spell using a spell slot of 5th level or higher, the initial damage increases by 2d4 for each slot level above 4th.",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 23,
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Wall of Fire",
@@ -6732,7 +7504,9 @@ module.exports = [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Wall of Force",
@@ -6748,7 +7522,9 @@ module.exports = [
     "SourcePage": 285,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Wall of Ice",
@@ -6764,7 +7540,9 @@ module.exports = [
     "SourcePage": 285,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Wall of Sand",
@@ -6776,11 +7554,13 @@ module.exports = [
     "Duration": "Concentration, up to 10 minutes",
     "Description": "You conjure up a wall of swirling sand on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 10 feet thick, and it vanishes when the spell ends. It blocks line of sight but not movement. A creature is blinded while in the wall’s space and must spend 3 feet of movement for every 1 foot it moves there.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 23,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Wall of Stone",
@@ -6798,7 +7578,9 @@ module.exports = [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Wall of Thorns",
@@ -6814,7 +7596,9 @@ module.exports = [
     "SourcePage": 287,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Wall of Water",
@@ -6826,13 +7610,15 @@ module.exports = [
     "Duration": "Concentration, up to 10 minutes",
     "Description": "You conjure up a wall of water on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 1 foot thick, or you can make a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall vanishes when the spell ends. The wall’s space is difficult terrain.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 23,
     "Classes": [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Warding Bond",
@@ -6848,7 +7634,9 @@ module.exports = [
     "SourcePage": 287,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Warding Wind",
@@ -6860,13 +7648,15 @@ module.exports = [
     "Duration": "Concentration, up to 10 minutes",
     "Description": "A strong wind (20 miles per hour) blows around you in a 10-foot radius and moves with you, remaining centered on you. The wind lasts for the spell’s duration.\nThe wind has the following effects:\n• It deafens you and other creatures in its area.\n• It extinguishes unprotected flames in its area that are torch-sized or smaller.\n• The area is difficult terrain for creatures other than you.\n• The attack rolls of ranged weapon attacks have disadvantage if they pass in or out of the wind.\n• It hedges out vapor, gas, and fog that can be dispersed by strong wind.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 23,
     "Classes": [
       "Bard",
       "Druid",
       "Sorcerer"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Water Breathing (Ritual)",
@@ -6885,7 +7675,9 @@ module.exports = [
       "Ranger",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Water Walk (Ritual)",
@@ -6904,7 +7696,9 @@ module.exports = [
       "Druid",
       "Ranger",
       "Sorcerer"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": true
   },
   {
     "Name": "Watery Sphere",
@@ -6916,13 +7710,15 @@ module.exports = [
     "Duration": "Concentration, up to 1 minute",
     "Description": "You conjure up a sphere of water with a 10-foot radius on a point you can see within range.\nThe sphere can hover in the air, but no more than 10 feet off the ground. The sphere remains for the spell’s duration.\nAny creature in the sphere’s space must make a Strength saving throw. On a successful save, a creature is ejected from that space to the nearest unoccupied space outside it. A Huge or larger creature succeeds on the saving throw automatically. On a failed save, a creature is restrained by the sphere and is engulfed by the water. At the end of each of its turns, a restrained target can repeat the saving throw.\nThe sphere can restrain a maximum of four Medium or smaller creatures or one Large creature. If the sphere restrains a creature in excess of these numbers, a random creature that was already restrained by the sphere falls out of it and lands prone in a space within 5 feet of it.\nAs an action, you can move the sphere up to 30 feet in a straight line. If it moves over a pit, cliff, or other drop, it safely descends until it is hovering 10 feet over ground. Any creature restrained by the sphere moves with it. You can ram the sphere into creatures, forcing them to make the saving throw, but no more than once per turn.\nWhen the spell ends, the sphere falls to the ground and extinguishes all normal flames within 30 feet of it. Any creature restrained by the sphere is knocked prone in the space where it falls.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 23,
     "Classes": [
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Web",
@@ -6939,7 +7735,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Weird",
@@ -6955,7 +7753,9 @@ module.exports = [
     "SourcePage": 288,
     "Classes": [
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Whirlwind",
@@ -6967,12 +7767,14 @@ module.exports = [
     "Duration": "Concentration, up to 1 minute",
     "Description": "A whirlwind howls down to a point on the ground you specify.\nThe whirlwind is a 10-foot-radius, 30-foot-high cylinder centered on that point. Until the spell ends, you can use your action to move the whirlwind up to 30 feet in any direction along the ground. The whirlwind sucks up any Medium or smaller objects that aren’t secured to anything and that aren’t worn or carried by anyone.\nA creature must make a Dexterity saving throw the first time on a turn that it enters the whirlwind or that the whirlwind enters its space, including when the whirlwind first appears. A creature takes 10d6 bludgeoning damage on a failed save, or half as much damage on a successful one. In addition, a Large or smaller creature that fails the save must succeed on a Strength saving throw or become restrained in the whirlwind until the spell ends.\nWhen a creature starts its turn restrained by the whirlwind, the creature is pulled 5 feet higher inside it, unless the creature is at the top. A restrained creature moves with the whirlwind and falls when the spell ends, unless the creature has some means to stay aloft.\nA restrained creature can use an action to make a Strength or Dexterity check against your spell save DC. If successful, the creature is no longer restrained by the whirlwind and is hurled 3d6 × 10 feet away from it in a random direction.",
     "AtHigherLevels": "",
-    "SourceBook": "from EE Players Companion",
+    "SourceBook": "EE Player's Companion",
     "SourcePage": 27,
     "Classes": [
       "Druid",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Wind Walk",
@@ -6988,7 +7790,9 @@ module.exports = [
     "SourcePage": 288,
     "Classes": [
       "Druid"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Wind Wall",
@@ -7005,7 +7809,9 @@ module.exports = [
     "Classes": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Wish",
@@ -7022,7 +7828,9 @@ module.exports = [
     "Classes": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Witch Bolt",
@@ -7040,7 +7848,9 @@ module.exports = [
       "Sorcerer",
       "Warlock",
       "Wizard"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Word of Recall",
@@ -7056,7 +7866,9 @@ module.exports = [
     "SourcePage": 289,
     "Classes": [
       "Cleric"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   },
   {
     "Name": "Wrathful Smite",
@@ -7072,7 +7884,9 @@ module.exports = [
     "SourcePage": 289,
     "Classes": [
       "Paladin"
-    ]
+    ],
+    "Concentration": true,
+    "Ritual": false
   },
   {
     "Name": "Zone of Truth",
@@ -7090,6 +7904,8 @@ module.exports = [
       "Bard",
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "Concentration": false,
+    "Ritual": false
   }
 ];

@@ -21,6 +21,8 @@ function cleanSpell(spell) {
 
   if (cleanedSpell.SourceBook === 'Players Handbook') {
     cleanedSpell.SourceBook = 'Player\'s Handbook';
+  } else if (cleanedSpell.SourceBook === 'from EE Players Companion') {
+    cleanedSpell.SourceBook = 'EE Player\'s Companion';
   }
 
   const atHigherLevel = /at higher levels\W*(.*)/i.exec(cleanedSpell.Description);
@@ -36,6 +38,11 @@ function cleanSpell(spell) {
     cleanedSpell.Components = cleanedSpell.Components.trim() + ' ' + misplacedComponents[1];
     cleanedSpell.Description = misplacedComponents[2];
   }
+
+  cleanedSpell.Concentration = cleanedSpell.Duration.indexOf('Concentration') !== -1;
+  cleanedSpell.Ritual = cleanedSpell.Name.indexOf('Ritual') !== -1;
+
+  cleanedSpell.Name = cleanedSpell.Name.replace(' (Ritual)', '');
 
   return cleanedSpell;
 }
